@@ -33,5 +33,5 @@ Here are some of my notable projects:
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AnoopGeorge418&layout=compact&theme=radical)
 
 ## 📫 How to reach me
-- **LinkedIn:** [Anoop George]([https://www.linkedin.com/in/anoop-george-620263251/])
-- **Email:** anoop.george418@example.com
+- **LinkedIn:** [Anoop George](https://www.linkedin.com/in/anoop-george-620263251/)
+- **Email:** anoopgeorge418@example.com
