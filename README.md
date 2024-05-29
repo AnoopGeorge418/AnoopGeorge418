@@ -51,9 +51,9 @@ Here are some of my notable projects:
   - ![Certificate](https://example.com/path/to/certificate_image.png)
 
 ## 📈 GitHub Stats
-![Anoop's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnoopGeorge418&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AnoopGeorge418&layout=compact&theme=radical)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AnoopGeorge418&theme=radical)
+![Anoop's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnoopGeorge418&show_icons=true&theme=dracula)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AnoopGeorge418&layout=compact&theme=dracula)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AnoopGeorge418&theme=dracula)
 
 ## 🗓️ GitHub Activity Graph
 [![Anoop George's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=AnoopGeorge418&custom_title=This%20is%20a%20title&hide_border=true)](https://github.com/AnoopGeorge418/github-readme-activity-graph)
