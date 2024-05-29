@@ -39,9 +39,9 @@ Here are some of my notable projects:
 
 ## 🎓 Certifications and Achievements
 - **Data Science With SQL** - Edureka Learning Center
-  - ![Certificate](Certificates/DS Certificate.pdf)
+  - ![Certificate](Certificates/DSCertificate1.pdf)
 - **Python With SQL** - Edureka Learning Center
-  - ![Certificate](Certificates/Python -Sql Certificate.pdf)
+  - ![Certificate](Certificates/PythonCertificate2.pdf)
 
 ## 📈 GitHub Stats
 ![Anoop's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnoopGeorge418&show_icons=true&theme=dracula)
