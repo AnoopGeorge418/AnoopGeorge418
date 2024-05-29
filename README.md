@@ -56,7 +56,7 @@ Here are some of my notable projects:
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AnoopGeorge418&theme=radical)
 
 ## 🗓️ GitHub Activity Graph
-![Anoop's GitHub activity graph](https://activity-graph.herokuapp.com/graph?username=AnoopGeorge418&theme=react-dark)
+![Anoop's GitHub activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=AnoopGeorge418&theme=react-dark)
 
 ## 📫 Connect with me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anoop-george-620263251/)
