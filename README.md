@@ -1,4 +1,4 @@
-# Hi there, I'm Anoop George! 👋
+# Hi there, I'm Anoop George! 👋 [![GitHub followers](https://img.shields.io/github/followers/AnoopGeorge418?style=social)](https://github.com/AnoopGeorge418)
 
 ![Hello!](https://raw.githubusercontent.com/AnoopGeorge418/AnoopGeorge418/main/wave.gif)
 ## 🚀 About Me
