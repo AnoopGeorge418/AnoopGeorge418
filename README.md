@@ -38,16 +38,10 @@ Here are some of my notable projects:
    - Implemented data preprocessing and recommendation algorithms.
 
 ## 🎓 Certifications and Achievements
-- **Data Science Specialization** - Coursera
-  - ![Certificate](https://example.com/path/to/certificate_image.png)
-- **Machine Learning** - Stanford University (Coursera)
-  - ![Certificate](https://example.com/path/to/certificate_image.png)
-- **Deep Learning Specialization** - Coursera
-  - ![Certificate](https://example.com/path/to/certificate_image.png)
-- **Kaggle Competitions Expert** - Kaggle
-  - ![Badge](https://example.com/path/to/badge_image.png)
-- **Google Data Analytics Professional Certificate** - Coursera
-  - ![Certificate](https://example.com/path/to/certificate_image.png)
+- **Data Science With SQL** - Edureka Learning Center
+  - ![Certificate](Certificates/DS Certificate.pdf)
+- **Python With SQL** - Edureka Learning Center
+  - ![Certificate](Certificates/Python -Sql Certificate.pdf)
 
 ## 📈 GitHub Stats
 ![Anoop's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnoopGeorge418&show_icons=true&theme=dracula)
