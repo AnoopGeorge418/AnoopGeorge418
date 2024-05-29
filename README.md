@@ -1,5 +1,7 @@
 # Hi there, I'm Anoop George! 👋
 
+![Hello!](https://raw.githubusercontent.com/AnoopGeorge418/AnoopGeorge418/main/wave.gif)
+
 ## 🚀 About Me
 I'm a passionate Data Scientist fresher with a strong foundation in data analysis, machine learning, and deep learning. I'm excited about using data to drive business decisions and create impactful solutions.
 
@@ -12,6 +14,14 @@ I'm a passionate Data Scientist fresher with a strong foundation in data analysi
 - **Data Visualization:** Tableau, Power BI
 - **Web Scraping:** BeautifulSoup, Scrapy
 - **Version Control:** Git, GitHub
+
+## 🛠️ Skills and Tools
+![Python](https://img.shields.io/badge/Python-3.8-blue)
+![Pandas](https://img.shields.io/badge/Pandas-1.2.4-green)
+![NumPy](https://img.shields.io/badge/NumPy-1.19.5-orange)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-0.24.1-brightgreen)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.4.1-yellow)
+![Keras](https://img.shields.io/badge/Keras-2.4.3-red)
 
 ## 💼 Projects
 Here are some of my notable projects:
@@ -29,31 +39,30 @@ Here are some of my notable projects:
    - Implemented data preprocessing and recommendation algorithms.
 
 ## 🎓 Certifications and Achievements
-
 - **Data Science Specialization** - Coursera
-  - ![Certificate](link_to_certificate_image_or_badge)
+  - ![Certificate](https://example.com/path/to/certificate_image.png)
 - **Machine Learning** - Stanford University (Coursera)
-  - ![Certificate](link_to_certificate_image_or_badge)
+  - ![Certificate](https://example.com/path/to/certificate_image.png)
 - **Deep Learning Specialization** - Coursera
-  - ![Certificate](link_to_certificate_image_or_badge)
+  - ![Certificate](https://example.com/path/to/certificate_image.png)
 - **Kaggle Competitions Expert** - Kaggle
-  - ![Badge](link_to_badge_image)
+  - ![Badge](https://example.com/path/to/badge_image.png)
 - **Google Data Analytics Professional Certificate** - Coursera
-  - ![Certificate](link_to_certificate_image_or_badge)
- 
-## 🛠️ Skills and Tools
-
-![Python](https://img.shields.io/badge/Python-3.8-blue)
-![Pandas](https://img.shields.io/badge/Pandas-1.2.4-green)
-![NumPy](https://img.shields.io/badge/NumPy-1.19.5-orange)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-0.24.1-brightgreen)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.4.1-yellow)
-![Keras](https://img.shields.io/badge/Keras-2.4.3-red)
+  - ![Certificate](https://example.com/path/to/certificate_image.png)
 
 ## 📈 GitHub Stats
 ![Anoop's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnoopGeorge418&show_icons=true&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AnoopGeorge418&layout=compact&theme=radical)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AnoopGeorge418&theme=radical)
 
-## 📫 How to reach me
-- **LinkedIn:** [Anoop George](https://www.linkedin.com/in/anoop-george-620263251/)
-- **Email:** anoopgeorge418@example.com
+## 🗓️ GitHub Activity Graph
+![Anoop's GitHub activity graph](https://activity-graph.herokuapp.com/graph?username=AnoopGeorge418&theme=react-dark)
+
+## 📫 Connect with me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-profile)
+[![Twitter](https://img.shields.io/badge/Twitter-blue?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/your-profile)
+[![Email](https://img.shields.io/badge/Email-red?style=flat-square&logo=gmail&logoColor=white)](mailto:anoop.george@example.com)
+
+## 🔥 Recent Activity
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
