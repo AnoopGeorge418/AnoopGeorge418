@@ -57,6 +57,9 @@ Here are some of my notable projects:
 ## 🗓️ GitHub Activity Graph
 [![Anoop George's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=AnoopGeorge418&custom_title=This%20is%20a%20title&hide_border=true&theme=dracula)](https://github.com/AnoopGeorge418/github-readme-activity-graph)
 
+## GITHUB STATS
+![Anoop's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnoopGeorge418&show_icons=true&theme=radical)
+
 ## LICENSE
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
