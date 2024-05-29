@@ -9,9 +9,9 @@ I'm a passionate Data Scientist fresher with a strong foundation in data analysi
 ## 🛠️ Skills
 - **Programming Languages:** Python, SQL
 - **Data Analysis:** Pandas, NumPy, Matplotlib, Seaborn
-- **Machine Learning:** Scikit-Learn, TensorFlow, Keras
-- **Data Visualization:** Tableau, Power BI
-- **Web Scraping:** BeautifulSoup, Scrapy
+- **Machine Learning:** Scikit-Learn
+- **NLP:** NLTK
+- **Web Scraping:** BeautifulSoup
 - **Version Control:** Git, GitHub
 
 ## 🛠️ Skills and Tools
@@ -56,9 +56,6 @@ Here are some of my notable projects:
 
 ## 🗓️ GitHub Activity Graph
 [![Anoop George's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=AnoopGeorge418&custom_title=This%20is%20a%20title&hide_border=true&theme=dracula)](https://github.com/AnoopGeorge418/github-readme-activity-graph)
-
-## GITHUB STATS
-![Anoop's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnoopGeorge418&show_icons=true&theme=radical)
 
 ## LICENSE
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
