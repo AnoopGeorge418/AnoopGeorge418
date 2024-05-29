@@ -28,6 +28,28 @@ Here are some of my notable projects:
    - Created a recommendation system using collaborative filtering.
    - Implemented data preprocessing and recommendation algorithms.
 
+## 🎓 Certifications and Achievements
+
+- **Data Science Specialization** - Coursera
+  - ![Certificate](link_to_certificate_image_or_badge)
+- **Machine Learning** - Stanford University (Coursera)
+  - ![Certificate](link_to_certificate_image_or_badge)
+- **Deep Learning Specialization** - Coursera
+  - ![Certificate](link_to_certificate_image_or_badge)
+- **Kaggle Competitions Expert** - Kaggle
+  - ![Badge](link_to_badge_image)
+- **Google Data Analytics Professional Certificate** - Coursera
+  - ![Certificate](link_to_certificate_image_or_badge)
+ 
+## 🛠️ Skills and Tools
+
+![Python](https://img.shields.io/badge/Python-3.8-blue)
+![Pandas](https://img.shields.io/badge/Pandas-1.2.4-green)
+![NumPy](https://img.shields.io/badge/NumPy-1.19.5-orange)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-0.24.1-brightgreen)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.4.1-yellow)
+![Keras](https://img.shields.io/badge/Keras-2.4.3-red)
+
 ## 📈 GitHub Stats
 ![Anoop's GitHub stats](https://github-readme-stats.vercel.app/api?username=AnoopGeorge418&show_icons=true&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AnoopGeorge418&layout=compact&theme=radical)
