@@ -58,6 +58,7 @@ Here are some of my notable projects:
 ## 🗓️ GitHub Activity Graph
 ![Anoop's GitHub activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=AnoopGeorge418&theme=react-dark)
 
+
 ## 📫 Connect with me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anoop-george-620263251/)
 [![Twitter](https://img.shields.io/badge/Twitter-blue?style=flat-square&logo=twitter&logoColor=white)](https://x.com/Anoopgeorg_)
