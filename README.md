@@ -3,7 +3,7 @@
 ![Hello!](https://raw.githubusercontent.com/AnoopGeorge418/AnoopGeorge418/main/wave.gif)
 
 ## 🚀 About Me
-I'm a passionate Data Scientist fresher with a strong foundation in data analysis, machine learning, and deep learning. I'm excited about using data to drive business decisions and create impactful solutions.
+I'm a passionate Data Scientist fresher with a strong foundation in data analysis, machine learning, and NLP. I'm excited about using data to drive business decisions and create impactful solutions.
 
 ![Visitor Count](https://komarev.com/ghpvc/?username=AnoopGeorge418&color=blue)
 
@@ -59,9 +59,9 @@ Here are some of my notable projects:
 ![Anoop's GitHub activity graph](https://activity-graph.herokuapp.com/graph?username=AnoopGeorge418&theme=react-dark)
 
 ## 📫 Connect with me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-profile)
-[![Twitter](https://img.shields.io/badge/Twitter-blue?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/your-profile)
-[![Email](https://img.shields.io/badge/Email-red?style=flat-square&logo=gmail&logoColor=white)](mailto:anoop.george@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anoop-george-620263251/)
+[![Twitter](https://img.shields.io/badge/Twitter-blue?style=flat-square&logo=twitter&logoColor=white)](https://x.com/Anoopgeorg_)
+[![Email](https://img.shields.io/badge/Email-red?style=flat-square&logo=gmail&logoColor=white)](mailto:anoopgeorge418@example.com)
 
 ## 🔥 Recent Activity
 <!--START_SECTION:activity-->
