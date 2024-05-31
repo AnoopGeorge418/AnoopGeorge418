@@ -49,7 +49,7 @@ Here are some of my notable projects:
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AnoopGeorge418&theme=dracula)
 
 ## 🗓️ GitHub Activity Graph
-[![Anoop George's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=AnoopGeorge418&custom_title=My%20a%20Activity&hide_border=true&theme=dracula)](https://github.com/AnoopGeorge418/github-readme-activity-graph)
+[![Anoop George's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=AnoopGeorge418&custom_title=My%20%Activity&hide_border=true&theme=dracula)](https://github.com/AnoopGeorge418/github-readme-activity-graph)
 
 ## LICENSE
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
