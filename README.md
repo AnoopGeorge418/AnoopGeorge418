@@ -25,15 +25,15 @@ I'm a passionate Data Scientist fresher with a strong foundation in data analysi
 ## 💼 Projects
 Here are some of my notable projects:
 
-1. **[House Price Prediction](https://github.com/AnoopGeorge418/house-price-prediction)**
+1. **[House Price Prediction](https://github.com/AnoopGeorge418/MACHINE-LEARNING-PROJECTS/tree/main/House_Price_Prediction)**
    - Used Linear Regression to predict house prices based on various features.
    - Implemented data cleaning, feature engineering, and model evaluation.
 
-2. **[Fake News Detection](https://github.com/AnoopGeorge418/fake-news-detection)**
+2. **[Fake News Detection](https://github.com/AnoopGeorge418/MACHINE-LEARNING-PROJECTS/tree/main/Fraud-Detection)**
    - Built a model to classify news articles as real or fake using NLP techniques.
    - Utilized TfidfVectorizer and PassiveAggressiveClassifier.
 
-3. **[Movie Recommendation System](https://github.com/AnoopGeorge418/movie-recommendation-system)**
+3. **[Movie Recommendation System](https://github.com/AnoopGeorge418/MACHINE-LEARNING-PROJECTS/tree/main/Movie%20Recommendation%20System)**
    - Created a recommendation system using collaborative filtering.
    - Implemented data preprocessing and recommendation algorithms.
 
