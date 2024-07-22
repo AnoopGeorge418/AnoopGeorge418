@@ -43,14 +43,78 @@ I am a dedicated learner passionate about Data Science and Fullstack Web Develop
 ## 📚 Projects
 
 ### Data Science Projects
-- **[Project 1](link-to-project-1)**: Brief description of project.
-- **[Project 2](link-to-project-2)**: Brief description of project.
-- **[Project 3](link-to-project-3)**: Brief description of project.
+#### [Project 1: Sentiment Analysis](link-to-project-1)
+<p>
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen">
+  <img src="https://img.shields.io/badge/Tools-Python%20%7C%20NLTK%20%7C%20scikit--learn-blue">
+  <img src="https://img.shields.io/badge/Data%20Source-Twitter-yellow">
+</p>
+A project that uses Natural Language Processing (NLP) techniques to analyze the sentiment of tweets. This project includes data cleaning, preprocessing, model training, and evaluation.
+
+![Project 1 Image](https://via.placeholder.com/300x200)
+
+---
+
+#### [Project 2: Sales Forecasting](link-to-project-2)
+<p>
+  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow">
+  <img src="https://img.shields.io/badge/Tools-Python%20%7C%20pandas%20%7C%20scikit--learn-blue">
+  <img src="https://img.shields.io/badge/Data%20Source-Kaggle-orange">
+</p>
+A project that involves forecasting future sales using historical sales data. Techniques used include time series analysis, feature engineering, and machine learning models.
+
+![Project 2 Image](https://via.placeholder.com/300x200)
+
+---
+
+#### [Project 3: Image Classification](link-to-project-3)
+<p>
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen">
+  <img src="https://img.shields.io/badge/Tools-Python%20%7C%20TensorFlow%20%7C%20Keras-blue">
+  <img src="https://img.shields.io/badge/Data%20Source-CIFAR--10-orange">
+</p>
+A project that classifies images into different categories using Convolutional Neural Networks (CNNs). This project covers data augmentation, model architecture, and performance evaluation.
+
+![Project 3 Image](https://via.placeholder.com/300x200)
+
+---
 
 ### Fullstack Web Development Projects
-- **[Project 1](link-to-project-1)**: Brief description of project.
-- **[Project 2](link-to-project-2)**: Brief description of project.
-- **[Project 3](link-to-project-3)**: Brief description of project.
+#### [Project 1: E-commerce Website](link-to-project-1)
+<p>
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen">
+  <img src="https://img.shields.io/badge/Tools-React%20%7C%20Node.js%20%7C%20MongoDB-blue">
+  <img src="https://img.shields.io/badge/Deployed-Yes-green">
+</p>
+A fully functional e-commerce website with features like user authentication, product management, shopping cart, and payment integration.
+
+![Project 1 Image](https://via.placeholder.com/300x200)
+
+---
+
+#### [Project 2: Personal Blog](link-to-project-2)
+<p>
+  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow">
+  <img src="https://img.shields.io/badge/Tools-HTML%20%7C%20CSS%20%7C%20JavaScript-blue">
+  <img src="https://img.shields.io/badge/Deployed-No-red">
+</p>
+A personal blog website where users can create, edit, and delete posts. The project focuses on front-end development with responsive design.
+
+![Project 2 Image](https://via.placeholder.com/300x200)
+
+---
+
+#### [Project 3: Task Management App](link-to-project-3)
+<p>
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen">
+  <img src="https://img.shields.io/badge/Tools-Vue.js%20%7C%20Firebase-blue">
+  <img src="https://img.shields.io/badge/Deployed-Yes-green">
+</p>
+A task management app with features like task creation, editing, deleting, and real-time updates using Firebase.
+
+![Project 3 Image](https://via.placeholder.com/300x200)
+
+
 
 ## 🎓 Certifications
 - **[Certification 1](link-to-certification-1)**
