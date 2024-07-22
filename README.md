@@ -1,22 +1,22 @@
 # Hello, I'm Anoop George 👋
 
-![Profile Banner](path-to-your-banner-image)
+![Profile Banner](https://media.giphy.com/media/xTiTnqUxyWbsAXq7Ju/giphy.gif)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Developer-Fullstack%20Web%20Developer-blue">
-  <img src="https://img.shields.io/badge/Data%20Scientist-Python%20%7C%20R%20%7C%20ML%20%7C%20DL-brightgreen">
+  <img src="https://img.shields.io/badge/Learner-Data%20Science%20%7C%20Fullstack%20Web%20Development-orange">
+  <img src="https://img.shields.io/badge/Passionate%20About-AI%20%7C%20ML%20%7C%20DL-brightgreen">
 </p>
 
 ## About Me
 
-I am a passionate Data Scientist and Fullstack Web Developer with a background in computer applications. I love exploring new technologies, working on innovative projects, and contributing to open-source communities.
+I am a dedicated learner passionate about Data Science and Fullstack Web Development. With a background in computer applications, I am committed to building a strong foundation in these fields through continuous learning and practical projects.
 
 - 🔭 I’m currently working on **[Project Name](link-to-project)**
 - 🌱 I’m currently learning **[Technology/Skill]**
 - 👯 I’m looking to collaborate on **[Project Type/Field]**
 - 💬 Ask me about **[Topics]**
 - 📫 How to reach me: **[Your Email]**
-- ⚡ Fun fact: **[Something Interesting About You]**
+- ⚡ Fun fact: **I love exploring open-source projects and contributing to the community.**
 
 ## 🛠️ Skills
 
