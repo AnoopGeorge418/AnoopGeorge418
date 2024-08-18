@@ -44,24 +44,15 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 
 ## Skills
 
-### Languages
-- [![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://docs.python.org/)
-- [![SQL](https://img.shields.io/badge/-SQL-003B57?logo=sqlite&logoColor=white)](https://www.sqlite.org/docs.html)
-- [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/docs/)
-- [![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
-### Libraries
-- [![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/)
-- [![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)](https://numpy.org/doc/stable/)
-- [![Scikit-learn](https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/)
-- [![Matplotlib](https://img.shields.io/badge/-Matplotlib-003B57?logo=matplotlib&logoColor=white)](https://matplotlib.org/stable/contents.html)
-- [![Seaborn](https://img.shields.io/badge/-Seaborn-FF9B00?logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
-- [![Plotly](https://img.shields.io/badge/-Plotly-3D4D6E?logo=plotly&logoColor=white)](https://plotly.com/python/)
-- [![Bokeh](https://img.shields.io/badge/-Bokeh-7A6E7A?logo=bokeh&logoColor=white)](https://docs.bokeh.org/en/latest/)
-
-### Machine Learning
-- [![Scikit-learn](https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/)
+| Languages                                                                 | Libraries                                                                                             | Machine Learning                                                                                              |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://docs.python.org/) | [![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/) | [![Scikit-learn](https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/) |
+| [![SQL](https://img.shields.io/badge/-SQL-003B57?logo=sqlite&logoColor=white)](https://www.sqlite.org/docs.html) | [![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)](https://numpy.org/doc/stable/) | [![XGBoost](https://img.shields.io/badge/-XGBoost-0E2A50?logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/en/latest/) |
+| [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/docs/) | [![Scikit-learn](https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/) | [![LightGBM](https://img.shields.io/badge/-LightGBM-9A3D2A?logo=lightgbm&logoColor=white)](https://lightgbm.readthedocs.io/en/latest/) |
+| [![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) | [![Matplotlib](https://img.shields.io/badge/-Matplotlib-003B57?logo=matplotlib&logoColor=white)](https://matplotlib.org/stable/contents.html) |                                                                                                               |
+| [![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS) | [![Seaborn](https://img.shields.io/badge/-Seaborn-FF9B00?logo=seaborn&logoColor=white)](https://seaborn.pydata.org/) |                                                                                                               |
+|                                                                           | [![Plotly](https://img.shields.io/badge/-Plotly-3D4D6E?logo=plotly&logoColor=white)](https://plotly.com/python/) |                                                                                                               |
+|                                                                           | [![Bokeh](https://img.shields.io/badge/-Bokeh-7A6E7A?logo=bokeh&logoColor=white)](https://docs.bokeh.org/en/latest/) |                                                                                                               |
 
 ---
 
