@@ -48,10 +48,10 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 
 ## 📜 **Certificates**
 
-### **1. [Data Science With Sql Certificate]**
+### **1. Data Science With Sql Certificate**
 [![Data Science With Sql](https://img.shields.io/badge/Certificate-Data%20Science-blue)](https://github.com/AnoopGeorge418/AnoopGeorge418/blob/main/Certificates/DS%20Certificate.pdf)
 
-### **2. [Python With SQL]**
+### **2. Python With SQL**
 [![Python With SQL Certificate](https://img.shields.io/badge/Certificate-Python_SQL-red)](https://github.com/AnoopGeorge418/AnoopGeorge418/blob/main/Certificates/Python%20-Sql%20Certificate.pdf)
 
 ---
