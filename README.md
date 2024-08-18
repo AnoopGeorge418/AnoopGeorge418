@@ -1,4 +1,4 @@
-![Banner](https://via.placeholder.com/1200x300?text=Your+Banner+Here) <!-- Replace with your actual banner image -->
+![Banner](https://github.com/AnoopGeorge418/AnoopGeorge418/blob/main/54dd2a6c17f894e233848e18eaa242d9.jpg) <!-- Replace with your actual banner image -->
 
 # 👋 Welcome to Anoop George's Data Science Portfolio
 
