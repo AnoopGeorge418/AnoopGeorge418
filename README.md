@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/AnoopGeorge418/AnoopGeorge418/main/54dd2a6c17f894e233848e18eaa242d9.jpg)
+![Banner](https://raw.githubusercontent.com/AnoopGeorge418/AnoopGeorge418/main/Banner.jpg)
 
 
 # 👋 Welcome to Anoop George's Data Science Portfolio
