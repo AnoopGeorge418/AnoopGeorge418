@@ -1,4 +1,4 @@
-![Banner](https://via.placeholder.com/1200x300?text=https://github.com/AnoopGeorge418/AnoopGeorge418/blob/main/Banner.html)
+![Banner](https://via.placeholder.com/1200x300?text=https://github.com/AnoopGeorge418/AnoopGeorge418/blob/main/54dd2a6c17f894e233848e18eaa242d9.jpg)
 
 
 # 👋 Welcome to Anoop George's Data Science Portfolio
