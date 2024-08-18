@@ -1,4 +1,5 @@
-![Banner](https://raw.githubusercontent.com/AnoopGeorge418/AnoopGeorge418/main/Banner1%20(1).png)
+<img src="https://raw.githubusercontent.com/AnoopGeorge418/AnoopGeorge418/main/Banner1%20(1).png" alt="Banner" style="width: 100%; height: auto;">
+
 
 
 # 👋 Welcome to Anoop George's Data Science Portfolio
