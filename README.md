@@ -8,14 +8,18 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 
 ## 🚀 **Current Project**
 
-### **Data Analysis of [Dataset Name]**
+### **Data Analysis Using SQL [Analyzing Sales Data for a Retail Company]**
 
-- **Description:** A deep dive into [Dataset Name], featuring thorough data cleaning, exploratory analysis, and insightful visualizations.
-- **Technologies Used:** Python, Pandas, Matplotlib, Seaborn
+- **Description:** In this project, working with a retail company's sales dataset to perform data analysis using SQL(PostgreSQL). By following the complete data science lifecycle, including data cleaning, data exploration, data analysis, and interpretation of results and more.
+- **Technologies Used:** Python, Pandas, Matplotlib, Seaborn, PostgreSQL, Machine Learning.
 - **Key Features:**
   - Comprehensive Data Cleaning
   - Exploratory Data Analysis (EDA)
   - Interactive Visualizations
+  - Model Building
+  - Evaluation
+  - Deploymeent
+  - Story Telling
 - **🔗 [Working On It](#)**
 
 ---
@@ -43,74 +47,24 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 ---
 ## Skills
 
-<table style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <td style="padding: 8px;">
-      <a href="https://docs.python.org/">
-        <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white" alt="Python" />
-      </a>
-      <br>
-      <a href="https://www.sqlite.org/docs.html">
-        <img src="https://img.shields.io/badge/-SQL-003B57?logo=sqlite&logoColor=white" alt="SQL" />
-      </a>
-      <br>
-      <a href="https://www.postgresql.org/docs/">
-        <img src="https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white" alt="PostgreSQL" />
-      </a>
-      <br>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-        <img src="https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white" alt="HTML" />
-      </a>
-      <br>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-        <img src="https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white" alt="CSS" />
-      </a>
-    </td>
-    <td style="padding: 8px;">
-      <a href="https://pandas.pydata.org/docs/">
-        <img src="https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white" alt="Pandas" />
-      </a>
-      <br>
-      <a href="https://numpy.org/doc/stable/">
-        <img src="https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white" alt="NumPy" />
-      </a>
-      <br>
-      <a href="https://scikit-learn.org/stable/">
-        <img src="https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-learn" />
-      </a>
-      <br>
-      <a href="https://matplotlib.org/stable/contents.html">
-        <img src="https://img.shields.io/badge/-Matplotlib-003B57?logo=matplotlib&logoColor=white" alt="Matplotlib" />
-      </a>
-      <br>
-      <a href="https://seaborn.pydata.org/">
-        <img src="https://img.shields.io/badge/-Seaborn-FF9B00?logo=seaborn&logoColor=white" alt="Seaborn" />
-      </a>
-      <br>
-      <a href="https://plotly.com/python/">
-        <img src="https://img.shields.io/badge/-Plotly-3D4D6E?logo=plotly&logoColor=white" alt="Plotly" />
-      </a>
-      <br>
-      <a href="https://docs.bokeh.org/en/latest/">
-        <img src="https://img.shields.io/badge/-Bokeh-7A6E7A?logo=bokeh&logoColor=white" alt="Bokeh" />
-      </a>
-    </td>
-    <td style="padding: 8px;">
-      <a href="https://scikit-learn.org/stable/">
-        <img src="https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-learn" />
-      </a>
-      <br>
-      <a href="https://xgboost.readthedocs.io/en/latest/">
-        <img src="https://img.shields.io/badge/-XGBoost-0E2A50?logo=xgboost&logoColor=white" alt="XGBoost" />
-      </a>
-      <br>
-      <a href="https://lightgbm.readthedocs.io/en/latest/">
-        <img src="https://img.shields.io/badge/-LightGBM-9A3D2A?logo=lightgbm&logoColor=white" alt="LightGBM" />
-      </a>
-    </td>
-  </tr>
-</table>
+### Languages
+[![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://docs.python.org/)
+[![SQL](https://img.shields.io/badge/-SQL-003B57?logo=sqlite&logoColor=white)](https://www.sqlite.org/docs.html)
+[![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/docs/)
+[![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
+### Libraries
+[![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/)
+[![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)](https://numpy.org/doc/stable/)
+[![Scikit-learn](https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/)
+[![Matplotlib](https://img.shields.io/badge/-Matplotlib-003B57?logo=matplotlib&logoColor=white)](https://matplotlib.org/stable/contents.html)
+[![Seaborn](https://img.shields.io/badge/-Seaborn-FF9B00?logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
+[![Plotly](https://img.shields.io/badge/-Plotly-3D4D6E?logo=plotly&logoColor=white)](https://plotly.com/python/)
+[![Bokeh](https://img.shields.io/badge/-Bokeh-7A6E7A?logo=bokeh&logoColor=white)](https://docs.bokeh.org/en/latest/)
+
+### Machine Learning
+[![Scikit-learn](https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/)
 
 ---
 
