@@ -18,7 +18,7 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
   - Interactive Visualizations
   - Model Building
   - Evaluation
-  - Deploymeent
+  - Deployment
   - Story Telling
 - **🔗 [Working On It](#)**
 
@@ -45,6 +45,17 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 - **🔗 [View on GitHub](https://github.com/AnoopGeorge418/MACHINE-LEARNING-PROJECTS/tree/main/Movie%20Recommendation%20System)**
 
 ---
+
+## 📜 **Certificates**
+
+### **1. [Data Science With Sql Certificate]**
+[![Data Science With Sql](https://img.shields.io/badge/Certificate-Data%20Science-blue)](https://github.com/AnoopGeorge418/AnoopGeorge418/blob/main/Certificates/DS%20Certificate.pdf)
+
+### **2. [Python With SQL]**
+[![Python With SQL Certificate](https://img.shields.io/badge/Certificate-Python_SQL-red)](https://github.com/AnoopGeorge418/AnoopGeorge418/blob/main/Certificates/Python%20-Sql%20Certificate.pdf)
+
+---
+
 ## Skills
 
 ### Languages
@@ -84,10 +95,9 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 
 ---
 
-
 ## 📜 **License**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This projects are licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
