@@ -16,7 +16,7 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
   - Comprehensive Data Cleaning
   - Exploratory Data Analysis (EDA)
   - Interactive Visualizations
-- **🔗 [Explore the Project](#)**
+- **🔗 [Working On It](#)**
 
 ---
 
@@ -24,7 +24,7 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 
 ### **1. [House Price Prediction Project]**
 
-- **Description:**Developed a predictive model to estimate house prices based on features like area, bedrooms, bathrooms, stories, parking, and furnishing status. Performed data preprocessing (handling missing values, encoding categorical variables, normalizing numerical features) and exploratory data analysis (EDA). Implemented and evaluated a Linear Regression model using Python, Pandas, NumPy, Scikit-learn, and Matplotlib, assessing performance with cross-validation, RMSE, MAE, and R-squared metrics..
+- **Description:** Developed a predictive model to estimate house prices based on features like area, bedrooms, bathrooms, stories, parking, and furnishing status. Performed data preprocessing (handling missing values, encoding categorical variables, normalizing numerical features) and exploratory data analysis (EDA). Implemented and evaluated a Linear Regression model using Python, Pandas, NumPy, Scikit-learn, and Matplotlib, assessing performance with cross-validation, RMSE, MAE, and R-squared metrics..
 - **Technologies Used:** Python, Scikit-Learn
 - **🔗 [View on GitHub](https://github.com/AnoopGeorge418/DATA-SCIENCE-PROJECTS/tree/main/House-Price-Prediction)**
 
@@ -45,23 +45,23 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 ## Skills
 
 ### Languages
-- ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) [Python Docs](https://docs.python.org/)
-- ![SQL](https://img.shields.io/badge/-SQL-003B57?logo=sqlite&logoColor=white) [SQL Docs](https://www.sqlite.org/docs.html)
-- ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white) [PostgreSQL Docs](https://www.postgresql.org/docs/)
-- ![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white) [HTML Docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- ![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white) [CSS Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://docs.python.org/)
+- [![SQL](https://img.shields.io/badge/-SQL-003B57?logo=sqlite&logoColor=white)](https://www.sqlite.org/docs.html)
+- [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/docs/)
+- [![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ### Libraries
-- ![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white) [Pandas Docs](https://pandas.pydata.org/docs/)
-- ![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white) [NumPy Docs](https://numpy.org/doc/stable/)
-- ![Scikit-learn](https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white) [Scikit-learn Docs](https://scikit-learn.org/stable/)
-- ![Matplotlib](https://img.shields.io/badge/-Matplotlib-003B57?logo=matplotlib&logoColor=white) [Matplotlib Docs](https://matplotlib.org/stable/contents.html)
-- ![Seaborn](https://img.shields.io/badge/-Seaborn-FF9B00?logo=seaborn&logoColor=white) [Seaborn Docs](https://seaborn.pydata.org/)
-- ![Plotly](https://img.shields.io/badge/-Plotly-3D4D6E?logo=plotly&logoColor=white) [Plotly Docs](https://plotly.com/python/)
-- ![Bokeh](https://img.shields.io/badge/-Bokeh-7A6E7A?logo=bokeh&logoColor=white) [Bokeh Docs](https://docs.bokeh.org/en/latest/)
+- [![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/)
+- [![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)](https://numpy.org/doc/stable/)
+- [![Scikit-learn](https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/)
+- [![Matplotlib](https://img.shields.io/badge/-Matplotlib-003B57?logo=matplotlib&logoColor=white)](https://matplotlib.org/stable/contents.html)
+- [![Seaborn](https://img.shields.io/badge/-Seaborn-FF9B00?logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
+- [![Plotly](https://img.shields.io/badge/-Plotly-3D4D6E?logo=plotly&logoColor=white)](https://plotly.com/python/)
+- [![Bokeh](https://img.shields.io/badge/-Bokeh-7A6E7A?logo=bokeh&logoColor=white)](https://docs.bokeh.org/en/latest/)
 
 ### Machine Learning
-- ![Scikit-learn](https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white) [Scikit-learn Docs](https://scikit-learn.org/stable/)
+- [![Scikit-learn](https://img.shields.io/badge/-Scikit_learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/)
 
 ---
 
