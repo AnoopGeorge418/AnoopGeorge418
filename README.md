@@ -30,7 +30,7 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 
 - **Description:** Developed a predictive model to estimate house prices based on features like area, bedrooms, bathrooms, stories, parking, and furnishing status. Performed data preprocessing (handling missing values, encoding categorical variables, normalizing numerical features) and exploratory data analysis (EDA). Implemented and evaluated a Linear Regression model using Python, Pandas, NumPy, Scikit-learn, and Matplotlib, assessing performance with cross-validation, RMSE, MAE, and R-squared metrics..
 - **Technologies Used:** Python, Scikit-Learn
-- **🔗 [View on GitHub](https://github.com/AnoopGeorge418/DATA-SCIENCE-PROJECTS/tree/main/House-Price-Prediction)**
+- **🔗 [View on GitHub](https://github.com/AnoopGeorge418/MACHINE-LEARNING-PROJECTS/tree/main/House_Price_Prediction)**
 
 ### **2. [Fake News Prediction Project]**
 
