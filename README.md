@@ -8,13 +8,13 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 
 ## 🚀 **Current Project**
 
-### **[Real Estate Price Prediction and Analysis Dashboard](https://github.com/AnoopGeorge418/FutureElevator-AI)**
+### **[Real Estate Price Prediction and Analysis Dashboard](https://github.com/AnoopGeorge418/RealEstate_PricePrediction-Project)**
 
 - **Description:**  Building a complete data science project that predicts real estate prices based on various features (e.g., location, number of bedrooms, square footage). This project will take you through the entire workflow from data collection to deployment and visualization..
 - **Technologies Used:** Python, Django, React, PostgreSQL, Pandas, NumPy, BeautifulSoup, Docker, Kubernetes, logging, multi threading and processing, pipelines.
 - **Key Features:**
   - data collection, storing, preprocessing, eda, model building, pipelines, deployments, documentation.
-- **🔗 [View Project on GitHub](https://github.com/AnoopGeorge418/FutureElevator-AI)**
+- **🔗 [View Project on GitHub](https://github.com/AnoopGeorge418/RealEstate_PricePrediction-Project)**
 
 ---
 
