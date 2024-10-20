@@ -8,22 +8,12 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 
 ## 🚀 **Current Project**
 
-### **[FutureElevator-AI: AI-Driven Job Hunting Application](https://github.com/AnoopGeorge418/FutureElevator-AI)**
+### **[Real Estate Price Prediction and Analysis Dashboard](https://github.com/AnoopGeorge418/FutureElevator-AI)**
 
-- **Description:** FutureElevator-AI is an innovative job-hunting application designed to revolutionize the way users find and apply for jobs globally. Utilizing advanced artificial intelligence, the platform enhances resumes, emails, and cover letters tailored to individual job postings, ensuring candidates stand out in a competitive job market.
-- **Technologies Used:** Python, Django, React, PostgreSQL, MongoDB, Pandas, NumPy, Selenium, TensorFlow, NLP (Natural Language Processing), Docker, Flask, GPT-3, ATS compliance models.
+- **Description:**  Building a complete data science project that predicts real estate prices based on various features (e.g., location, number of bedrooms, square footage). This project will take you through the entire workflow from data collection to deployment and visualization..
+- **Technologies Used:** Python, Django, React, PostgreSQL, Pandas, NumPy, BeautifulSoup, Docker, Kubernetes, logging, multi threading and processing, pipelines.
 - **Key Features:**
-  - User Authentication: Secure login using email and password.
-  - Platform Selection: Option to apply to jobs on specific platforms or all available platforms.
-  - Job Role and Date Filtering: Filter job listings by role and posting date.
-  - Resume Upload: Upload resumes for automatic processing.
-  - Resume Enhancement: AI-based resume enhancements tailored to job postings.
-  - Cover Letter Generation: Automated, customized cover letters generated for each application.
-  - Automated Job Applications: Automatic application submission, including external job platforms.
-  - Cold Email Sending: Personalized cold emails to hiring companies.
-  - ATS Compliance Checking: Ensure resumes and cover letters meet ATS requirements at various stages.
-  - CSV Data Export: Download application data in CSV format.
-  - Dashboard: Comprehensive job application dashboard showing applied, accepted, and rejected jobs, with filtering options.
+  - data collection, storing, preprocessing, eda, model building, pipelines, deployments, documentation.
 - **🔗 [View Project on GitHub](https://github.com/AnoopGeorge418/FutureElevator-AI)**
 
 ---
