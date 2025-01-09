@@ -8,29 +8,11 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 
 ## 🚀 **Current Project**
 
-### **[...](...)**
-
 ---
 
 ## ✅ **Completed Projects**
 
-### **1. [House Price Prediction Project]**
-
-- **Description:** Developed a predictive model to estimate house prices based on features like area, bedrooms, bathrooms, stories, parking, and furnishing status. Performed data preprocessing (handling missing values, encoding categorical variables, normalizing numerical features) and exploratory data analysis (EDA). Implemented and evaluated a Linear Regression model using Python, Pandas, NumPy, Scikit-learn, and Matplotlib, assessing performance with cross-validation, RMSE, MAE, and R-squared metrics..
-- **Technologies Used:** Python, Scikit-Learn
-- **🔗 [View on GitHub](https://github.com/AnoopGeorge418/MACHINE-LEARNING-PROJECTS/tree/main/House_Price_Prediction)**
-
-### **2. [Fake News Prediction Project]**
-
-- **Description:** Developed a machine learning model to classify news articles as real or fake using NLP techniques. Preprocessed text data by removing stop words, tokenizing. Implemented and compared classification models, including Logistic Regression, and selected the best model based on accuracy and F1 score. Evaluated performance using cross-validation, precision, recall, and F1 score metrics with Python, Pandas, NumPy, Scikit-learn, and NLTK.
-- **Technologies Used:** Python, Scikitlearn, Tableau, Power BI
-- **🔗 [View on GitHub](https://github.com/AnoopGeorge418/MACHINE-LEARNING-PROJECTS/tree/main/Fraud-Detection)**
-
 ### **3. [Movie Recommendation System Project]**
-
-- **Description:** Developed a recommendation system to suggest movies based on user preferences and viewing history. Implemented collaborative filtering techniques (user-based and item-based) and used matrix factorization methods like Singular Value Decomposition (SVD) to enhance recommendation accuracy. Evaluated performance with RMSE and precision at K metrics, using Python, Pandas, NumPy, Scikit-learn, and the Surprise library.
-- **Technologies Used:** Python
-- **🔗 [View on GitHub](https://github.com/AnoopGeorge418/MACHINE-LEARNING-PROJECTS/tree/main/Movie%20Recommendation%20System)**
 
 ---
 
