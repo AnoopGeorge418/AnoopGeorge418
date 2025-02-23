@@ -7,13 +7,13 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
 ---
 
 ## ✅ **Completed Projects**
-### **1. [House Price Prediction Project]()**
+### **1. [Crop Yield Prediction Project](https://github.com/AnoopGeorge418/Crop-Yield-Prediction)**
 
-    - Developed a predictive model to estimate house prices using features such as area, bedrooms, bathrooms, stories, parking, and furnishing status.
-    - Conducted data preprocessing, including handling missing values, encoding categorical variables, and normalizing numerical features.
-    - Analyzed a dataset with house characteristics and prices; conducted exploratory data analysis (EDA).
-    - Implemented and compared Linear Regression model; evaluated model performance using cross-validation, RMSE, MAE, and R-squared metrics.
-    - Utilized Python, Pandas, NumPy, Scikit-learn, and Matplotlib for analysis and model building.
+    - Developed a predictive model for estimating crop yield based on environmental and agricultural factors using machine learning algorithms.
+    - Implemented data preprocessing and feature engineering techniques, including handling missing values, scaling, and feature selection, to improve model performance.
+    - Built regression models (Linear Regression, Random Forest, XGBoost, etc.) to accurately forecast crop yield, optimizing for RMSE and R² metrics.
+    - Utilized Python and key libraries (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn) to analyze, visualize, and interpret agricultural data trends.
+    - Build the app for this model using Flask for an interactive web application, enabling stakeholders to make data-driven decisions for agricultural planning.
 
 ### **2. [Fake News Prediction Project]()**
 
