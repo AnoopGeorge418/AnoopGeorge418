@@ -15,7 +15,7 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
     - **Utilized Python and key libraries** (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn) to analyze, visualize, and interpret agricultural data trends.
     - **Build the app for this model using Flask** for an interactive web application, enabling stakeholders to make data-driven decisions for agricultural planning.
 
-### **2. [Fake News Prediction Project]()**
+### **2. [Fake News Prediction Project](https://github.com/AnoopGeorge418/Fake-News-Prediction-Project)**
 
     - Developed a machine learning model to classify news articles as real or fake using natural language processing (NLP) techniques.
     - Preprocessed text data by removing stop words, tokenizing, and vectorizing using TF-IDF.
@@ -23,7 +23,7 @@ I'm Anoop George, a dedicated data science learner exploring the world of data a
     - Evaluated model performance using cross-validation, precision, recall, and F1 score metrics.
     - Utilized Python, Pandas, NumPy, Scikit-learn, and NLTK for data processing and model building.
 
-### **3. [Movie Recommendation System Project]()**
+### **3. [Movie Recommendation System Project](https://github.com/AnoopGeorge418/Movie-Recommendation-System-Project)**
     - Developed a recommendation system to suggest movies to users based on their preferences and viewing history.
     - Implemented collaborative filtering techniques, including user-based and item-based filtering, to predict user ratings for movies.
     - Utilized matrix factorization methods such as Singular Value Decomposition (SVD) to improve recommendation accuracy.
