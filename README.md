@@ -5,7 +5,7 @@
 
 <!-- PROFILE VIEWS + VISITOR BADGE -->
 <img src="https://komarev.com/ghpvc/?username=AnoopGeorge418&label=Profile%20Views&color=6366F1&style=for-the-badge" alt="profile views"/>
-<img src="https://img.shields.io/badge/dynamic/json?color=06B6D4&label=Currently%20Building&query=%24.name&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAnoopGeorge418%2FLumenQuest&style=for-the-badge&logo=github" alt="currently building"/>
+<img src="https://img.shields.io/badge/Currently%20Building-LumenQuest-06B6D4?style=for-the-badge&logo=github&logoColor=white" alt="currently building"/>
 
 <!-- TYPING ANIMATION -->
 <a href="https://git.io/typing-svg">
@@ -44,9 +44,9 @@ I'm a full-stack developer who cares more about **understanding how things work 
 |:---:|:---:|
 | 🎮 Game | Stardew Valley |
 | 🎬 Movie / Show / Anime | One Piece · The Chosen |
-| 📚 Book | *fill me in* |
+| 📚 Book | *figuring it out* |
 | 🎵 Music | Pirates of the Caribbean Theme |
-| ☕ Fuel | Coffee |
+| 💧 Fuel | Water |
 | 🧠 Dev Tool | Zed |
 
 </div>
@@ -93,7 +93,7 @@ I'm a full-stack developer who cares more about **understanding how things work 
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=AnoopGeorge418&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="48%"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AnoopGeorge418&theme=tokyonight&hide_border=true" width="48%"/>
+<img src="https://streak-stats.demolab.com/?user=AnoopGeorge418&theme=tokyonight&hide_border=true" width="48%"/>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnoopGeorge418&layout=compact&theme=tokyonight&hide_border=true" width="48%"/>
 
