@@ -19,9 +19,9 @@
 
 I'm a full-stack developer who cares more about **understanding how things work under the hood** than just shipping the fastest path to done. That shows up in how I build — I'll spend extra time getting the architecture right, reading the RFC, or understanding *why* a pattern exists before I use it.
 
-- 🔭 Currently building **[LumenQuest](#)** — a multi-platform book reading app (React Native/Expo + FastAPI + two internal web panels), structured as a Turborepo monorepo on Bun, with async SQLAlchemy 2.0 + Neon serverless Postgres.
+- 🔭 Currently building **[LumenQuest](https://github.com/AnoopGeorge418/LumenQuest.git)** — a multi-platform book reading app (React Native/Expo + FastAPI + two internal web panels), structured as a Turborepo monorepo on Bun, with async SQLAlchemy 2.0 + Neon serverless Postgres.
 - 🛠️ Built **[faststrapy](https://pypi.org/project/faststrapy/)** — an open-source FastAPI scaffolding CLI (`uvx faststrapy@latest`), inspired by `create-next-app`, with a Pydantic-driven config contract and a Jinja2 template generator system.
-- 🌐 Designed my **personal portfolio** on a "Git as CMS" architecture — Next.js + GSAP frontend, FastAPI backend, GitHub-committed markdown for blog posts.
+<!-- - 🌐 Designed my personal portfolio on a "Git as CMS" architecture — Next.js + GSAP frontend, FastAPI backend, GitHub-committed markdown for blog posts. -->
 - 🌱 Always learning in public — open source and portfolio-building are as much the goal as the code itself.
 - 💬 Ask me about: FastAPI internals, async SQLAlchemy, monorepo tooling (Turborepo/Bun), or React Native/Expo.
 
@@ -92,11 +92,11 @@ I'm a full-stack developer who cares more about **understanding how things work 
 <div align="center">
 
 <!-- Replace href="#" with your real links -->
-<a href="#"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="#"><img src="https://img.shields.io/badge/Twitter%2FX-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
-<a href="#"><img src="https://img.shields.io/badge/Portfolio-06B6D4?style=for-the-badge&logo=vercel&logoColor=white"/></a>
-<a href="#"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="#"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/anoop-george418/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://x.com/Anoopgeorg_"><img src="https://img.shields.io/badge/Twitter%2FX-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
+<!-- <a href="#"><img src="https://img.shields.io/badge/Portfolio-06B6D4?style=for-the-badge&logo=vercel&logoColor=white"/></a> -->
+<a href="anoopgeorge418@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://www.instagram.com/____anoopgeorge418____/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
 
 </div>
 
