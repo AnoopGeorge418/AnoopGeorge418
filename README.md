@@ -1,19 +1,27 @@
 <div align="center">
 
 <!-- ANIMATED BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:06B6D4&height=220&section=header&text=Anoop%20George&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20Builder%20of%20Deep%20Systems&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:8B5CF6,100:06B6D4&height=250&section=header&text=Anoop%20George&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20Builder%20of%20Deep%20Systems&descAlignY=52&descSize=18&reversal=false" width="100%"/>
+
+<!-- PROFILE VIEWS + VISITOR BADGE -->
+<img src="https://komarev.com/ghpvc/?username=AnoopGeorge418&label=Profile%20Views&color=6366F1&style=for-the-badge" alt="profile views"/>
+<img src="https://img.shields.io/badge/dynamic/json?color=06B6D4&label=Currently%20Building&query=%24.name&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAnoopGeorge418%2FLumenQuest&style=for-the-badge&logo=github" alt="currently building"/>
 
 <!-- TYPING ANIMATION -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=06B6D4&center=true&vCenter=true&width=600&lines=I+build+full-stack+apps+that+solve+real+problems;Python+%2F+FastAPI+%E2%80%A2+React+%2F+Next.js+%2F+React+Native;Currently+shipping+LumenQuest+%F0%9F%93%9A;I+go+deep%2C+not+just+wide" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=06B6D4&center=true&vCenter=true&width=650&lines=I+build+full-stack+apps+that+solve+real+problems;Python+%2F+FastAPI+%E2%80%A2+React+%2F+Next.js+%2F+React+Native;Currently+shipping+LumenQuest+%F0%9F%93%9A;I+go+deep%2C+not+just+wide" alt="Typing SVG" />
 </a>
 
 </div>
 
-<!-- PIXEL ART DIVIDER -->
+<!-- PIXEL SNAKE DIVIDER -->
 <img src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg" width="100%"/>
 
----
+<div align="center">
+
+![divider](https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif)
+
+</div>
 
 ### 👋 About Me
 
@@ -21,21 +29,27 @@ I'm a full-stack developer who cares more about **understanding how things work 
 
 - 🔭 Currently building **[LumenQuest](https://github.com/AnoopGeorge418/LumenQuest.git)** — a multi-platform book reading app (React Native/Expo + FastAPI + two internal web panels), structured as a Turborepo monorepo on Bun, with async SQLAlchemy 2.0 + Neon serverless Postgres.
 - 🛠️ Built **[faststrapy](https://pypi.org/project/faststrapy/)** — an open-source FastAPI scaffolding CLI (`uvx faststrapy@latest`), inspired by `create-next-app`, with a Pydantic-driven config contract and a Jinja2 template generator system.
-<!-- - 🌐 Designed my personal portfolio on a "Git as CMS" architecture — Next.js + GSAP frontend, FastAPI backend, GitHub-committed markdown for blog posts. -->
 - 🌱 Always learning in public — open source and portfolio-building are as much the goal as the code itself.
 - 💬 Ask me about: FastAPI internals, async SQLAlchemy, monorepo tooling (Turborepo/Bun), or React Native/Expo.
 
-<!-- FAVORITES SECTION - fill in your own -->
+<img src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg" width="100%">
+
+---
+
 ### ⭐ Favorites
 
+<div align="center">
+
 | Category | Pick |
-|---|---|
-| 🎮 Game | *fill me in* |
-| 🎬 Movie/Show | *fill me in* |
+|:---:|:---:|
+| 🎮 Game | Stardew Valley |
+| 🎬 Movie / Show / Anime | One Piece · The Chosen |
 | 📚 Book | *fill me in* |
-| 🎵 Music | *fill me in* |
-| ☕ Fuel | *fill me in* |
-| 🧠 Dev Tool | *fill me in* |
+| 🎵 Music | Pirates of the Caribbean Theme |
+| ☕ Fuel | Coffee |
+| 🧠 Dev Tool | Zed |
+
+</div>
 
 ---
 
@@ -63,10 +77,10 @@ I'm a full-stack developer who cares more about **understanding how things work 
 
 <div align="center">
 
-<a href="#">
+<a href="https://github.com/AnoopGeorge418/LumenQuest">
 <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnoopGeorge418&repo=lumenquest&theme=tokyonight&hide_border=true" />
 </a>
-<a href="#">
+<a href="https://pypi.org/project/faststrapy/">
 <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnoopGeorge418&repo=faststrapy&theme=tokyonight&hide_border=true" />
 </a>
 
@@ -83,6 +97,18 @@ I'm a full-stack developer who cares more about **understanding how things work 
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnoopGeorge418&layout=compact&theme=tokyonight&hide_border=true" width="48%"/>
 
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AnoopGeorge418&theme=tokyo-night&hide_border=true" width="97%"/>
+
+</div>
+
+---
+
+### 🏆 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=AnoopGeorge418&theme=tokyonight&no-frame=true&row=1&column=7" width="97%"/>
+
 </div>
 
 ---
@@ -91,14 +117,17 @@ I'm a full-stack developer who cares more about **understanding how things work 
 
 <div align="center">
 
-<!-- Replace href="#" with your real links -->
 <a href="https://www.linkedin.com/in/anoop-george418/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="https://x.com/Anoopgeorg_"><img src="https://img.shields.io/badge/Twitter%2FX-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
-<!-- <a href="#"><img src="https://img.shields.io/badge/Portfolio-06B6D4?style=for-the-badge&logo=vercel&logoColor=white"/></a> -->
-<a href="anoopgeorge418@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="mailto:anoopgeorge418@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://www.instagram.com/____anoopgeorge418____/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+<br/>
+<a href="https://www.youtube.com/@AnoopGeorge418"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a>
+<a href="https://open.spotify.com/user/31jwuiz3v3qsasny4ta7wfajhg64"><img src="https://img.shields.io/badge/Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white"/></a>
+<a href="https://discord.com/channels/@me"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/></a>
+<a href="https://medium.com/@anoopgeorge418"><img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white"/></a>
 
 </div>
 
 <!-- ANIMATED FOOTER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,100:6366F1&height=120&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,50:8B5CF6,100:6366F1&height=150&section=footer"/>
