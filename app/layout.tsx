@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import { Lora, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import { cn } from '@/lib/utils';
 
-const lora = Lora({ variable: '--font-lora', subsets: ['latin'] });
+// Primary font
+const loraSerif = Lora({ variable: '--font-lora', subsets: ['latin'] });
 
+// Secondary font
 const geistMono = Geist_Mono({
 	variable: '--font-geist-mono',
 	subsets: ['latin'],
@@ -19,7 +22,12 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 	return (
 		<html
 			lang="en"
-			className={`${lora.variable} ${geistMono.variable} h-full antialiased`}>
+			className={cn(
+				'h-full',
+				'antialiased',
+				loraSerif.variable,
+				geistMono.variable,
+			)}>
 			<body className="min-h-full flex flex-col">{children}</body>
 		</html>
 	);
