@@ -25,7 +25,7 @@
 
 ### 👋 About Me
 
-I'm a full-stack developer who cares more about **understanding how things work under the hood** than just shipping the fastest path to done. That shows up in how I build — I'll spend extra time getting the architecture right, reading the RFC, or understanding *why* a pattern exists before I use it.
+I'm a full-stack developer who cares more about **understanding how things work under the hood** than just shipping the fastest path to done. That shows up in how I build — I'll spend extra time getting the architecture right, reading the RFC, or understanding _why_ a pattern exists before I use it.
 
 - 🔭 Currently building **[LumenQuest](https://github.com/AnoopGeorge418/LumenQuest.git)** — a multi-platform book reading app (React Native/Expo + FastAPI + two internal web panels), structured as a Turborepo monorepo on Bun, with async SQLAlchemy 2.0 + Neon serverless Postgres.
 - 🛠️ Built **[faststrapy](https://pypi.org/project/faststrapy/)** — an open-source FastAPI scaffolding CLI (`uvx faststrapy@latest`), inspired by `create-next-app`, with a Pydantic-driven config contract and a Jinja2 template generator system.
@@ -40,14 +40,14 @@ I'm a full-stack developer who cares more about **understanding how things work 
 
 <div align="center">
 
-| Category | Pick |
-|:---:|:---:|
-| 🎮 Game | Stardew Valley |
-| 🎬 Movie / Show / Anime | One Piece · The Chosen |
-| 📚 Book | *figuring it out* |
-| 🎵 Music | Pirates of the Caribbean Theme |
-| 💧 Fuel | Water |
-| 🧠 Dev Tool | Zed |
+|        Category         |              Pick              |
+| :---------------------: | :----------------------------: |
+|         🎮 Game         |         Stardew Valley         |
+| 🎬 Movie / Show / Anime |     One Piece · The Chosen     |
+|         📚 Book         |       _figuring it out_        |
+|        🎵 Music         | Pirates of the Caribbean Theme |
+|         💧 Fuel         |             Water              |
+|       🧠 Dev Tool       |              Zed               |
 
 </div>
 
