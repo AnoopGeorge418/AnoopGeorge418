@@ -6,11 +6,8 @@ import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import { Zap } from 'lucide-react';
-import { FaGithub } from 'react-icons/fa';
-import { ImLinkedin } from 'react-icons/im';
-
 import {
+	Zap,
 	UserRound,
 	LucideHome,
 	BriefcaseBusiness,
@@ -18,6 +15,9 @@ import {
 	Code2,
 	NotebookText,
 } from 'lucide-react';
+
+import { FaGithub } from 'react-icons/fa';
+import { ImLinkedin } from 'react-icons/im';
 
 import { Button } from '../ui/button';
 
@@ -37,7 +37,7 @@ const navItems = [
 	{ name: 'Blogs', href: '/blogs', icon: NotebookText },
 ];
 
-// Mobile navigation intentionally excludes homepage sections.
+// Mobile navigation excludes homepage sections.
 const mobileNavItems = navItems.filter(
 	(item) => !['Services', 'Stacks'].includes(item.name),
 );
@@ -48,7 +48,9 @@ export const NavBar = () => {
 	const [hideNavbar, setHideNavbar] = useState(false);
 	const [activeSection, setActiveSection] = useState('hero');
 
+	// ==========================================
 	// Desktop navbar scroll behavior
+	// ==========================================
 	useEffect(() => {
 		let lastY = window.scrollY;
 
@@ -71,10 +73,13 @@ export const NavBar = () => {
 		};
 	}, []);
 
+	// ==========================================
 	// Track homepage sections
+	// ==========================================
 	useEffect(() => {
+		// Only track sections on homepage.
+		// No synchronous setState here.
 		if (pathname !== '/') {
-			setActiveSection('hero');
 			return;
 		}
 
@@ -109,7 +114,9 @@ export const NavBar = () => {
 		};
 	}, [pathname]);
 
+	// ==========================================
 	// Desktop active navigation
+	// ==========================================
 	const isActive = (href: string, name: string) => {
 		// Homepage section navigation
 		if (pathname === '/') {
@@ -140,10 +147,13 @@ export const NavBar = () => {
 		return false;
 	};
 
+	// ==========================================
 	// Mobile active navigation
+	// ==========================================
 	//
-	// On the homepage, Home remains active regardless
-	// of which section the user is currently viewing.
+	// On the homepage, Home stays active
+	// regardless of which section is visible.
+	//
 	const isMobileActive = (href: string, name: string) => {
 		if (pathname === '/') {
 			return name === 'Home';
@@ -158,9 +168,9 @@ export const NavBar = () => {
 
 	return (
 		<>
-			{/* =========================
+			{/* ========================================
 			    Desktop Navbar
-			========================= */}
+			======================================== */}
 			<nav
 				className={cn(
 					'fixed top-0 left-1/2 z-50 hidden',
@@ -170,7 +180,7 @@ export const NavBar = () => {
 					'shadow-[0_0_10px_rgba(0,0,0,0.10)]',
 					'transition-transform duration-300 ease-in-out',
 					'md:mt-5 md:flex md:px-10',
-					hideNavbar ? '-translate-y-[150%]' : 'translate-y-0',
+					hideNavbar ? 'translate-y-[-150%]' : 'translate-y-0',
 				)}>
 				{/* Logo */}
 				<Link href="/" className="flex shrink-0 items-center gap-1">
@@ -207,8 +217,9 @@ export const NavBar = () => {
 					})}
 				</div>
 
-				{/* Desktop Social Links + CTA */}
+				{/* Social Links + CTA */}
 				<div className="flex items-center gap-6">
+					{/* GitHub */}
 					<Link
 						href="https://github.com/AnoopGeorge418"
 						target="_blank"
@@ -217,6 +228,7 @@ export const NavBar = () => {
 						<FaGithub className="h-5 w-5 transition-opacity hover:opacity-60" />
 					</Link>
 
+					{/* LinkedIn */}
 					<Link
 						href="https://www.linkedin.com/in/anoop-george418/"
 						target="_blank"
@@ -225,6 +237,7 @@ export const NavBar = () => {
 						<ImLinkedin className="h-5 w-5 transition-opacity hover:opacity-60" />
 					</Link>
 
+					{/* Get In Touch */}
 					<Button className="h-10 w-45 cursor-pointer gap-2 uppercase tracking-widest">
 						<Zap className="h-5 w-5" />
 						Get In Touch
@@ -232,9 +245,9 @@ export const NavBar = () => {
 				</div>
 			</nav>
 
-			{/* =========================
+			{/* ========================================
 			    Mobile Bottom Tab Bar
-			========================= */}
+			======================================== */}
 			<TooltipProvider>
 				<nav
 					className="
@@ -251,7 +264,7 @@ export const NavBar = () => {
 						md:hidden
 					">
 					<div className="flex flex-nowrap items-center justify-around">
-						{/* Mobile Navigation */}
+						{/* Navigation */}
 						{mobileNavItems.map((item) => {
 							const Icon = item.icon;
 
