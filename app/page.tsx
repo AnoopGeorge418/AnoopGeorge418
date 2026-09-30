@@ -1,40 +1,15 @@
-"use client"
-
-import { useEffect, useState } from 'react';
-
-import { NavBar } from '@/components/layouts/NavBar';
 import { Button } from '@/components/ui/button';
 
 import { MoveUpRight, MoveDown, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { MyStacks } from '@/components/Stacks';
+
+import { MyStacks } from '@/components/Sections/Stacks';
+import { MyServices } from '@/components/Sections/Services';
+import { MyBlogs } from '@/components/Sections/Blogs';
 
 const Home = () => {
-
-    const [hideNavbar, setHideNavbar] = useState(false)
-
-    useEffect(() => {
-        let lastY = window.scrollY;
-        const onScroll = () => {
-            const y = window.scrollY;
-            if (y > lastY && y > 80) {
-                setHideNavbar(true) // scrolling down
-            } else if (y < lastY) {
-                setHideNavbar(false) // scrolling up
-            }
-            lastY = y;
-        }
-
-        window.addEventListener('scroll', onScroll, { passive: true });
-        return () => window.removeEventListener('scroll', onScroll);
-    }, []);
-    
 	return (
 		<div className="flex flex-col min-h-screen gap-4 bg-background text-foreground items-center">
-            <div className={`fixed top-0 inset-x-0 z-50 flex justify-center transition-transform duration-300 md:${hideNavbar ? '-translate-y-full' : 'translate-y-0'}`}>
-				<NavBar />
-			</div>
-
 			{/*hero section*/}
 			<section
 				id="hero"
@@ -93,7 +68,7 @@ const Home = () => {
 						</Button>
 						<Button className="flex justify-center items-center w-80 md:w-56 cursor-pointer h-15 md:h-12 gap-2 border border-gray-300 bg-white/80 hover:bg-neutral-100 text-neutral-600 rounded-full md:rounded-md">
 							<span className="font-mono tracking-widest uppercase text-[8px] md:text-sm">
-								Explore My Works
+								<Link href="#works">Explore My Works</Link>
 							</span>
 							<MoveDown className="w-2 h-2" />
 						</Button>
@@ -117,54 +92,164 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-            </section>
+			</section>
 
-            {/*Works*/}
-            <div className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 shadow pt-4 pb-4">
-                {/*header*/}
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-                    <div className='flex flex-col space-y-4'>
-                        <h1 className='font-lora text-3xl md:text-5xl tracking-widest'>Works</h1>
-                        <p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">A collection of projects I've built and shipped — from full-stack apps to experiments.
-                            Each one reflects what I was learning at the time.
-                        </p>
-                    </div>
-                    <Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
-                        View All Works
-                        <ArrowRight />
-                    </Button>
-                </div>
+			{/*Works*/}
+			<div
+				id="works"
+				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 shadow pt-4 pb-4">
+				{/*header*/}
+				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+					<div className="flex flex-col space-y-4">
+						<h1 className="font-lora text-3xl md:text-5xl tracking-widest">
+							Works
+						</h1>
+						<p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
+							A collection of projects I've built and shipped —
+							from full-stack apps to experiments. Each one
+							reflects what I was learning at the time.
+						</p>
+					</div>
+					<Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
+						<Link href="/works">View All Works</Link>
+						<ArrowRight />
+					</Button>
+				</div>
 
-                {/*divider*/}
-                <hr className="text-gray-800 h-2 rounded-full mt-2 w-full" />
-                
-                {/*bento cards*/}
-                <div></div>
-            </div>
+				{/*divider*/}
+				<hr className="text-gray-800 h-2 rounded-full mt-2 w-full" />
 
-            {/*Stacks*/}
-            <section id='stacks' className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 shadow pt-4 pb-4">
-                {/*header*/}
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-                    <div className='flex flex-col space-y-4'>
-                        <h1 className='font-lora text-3xl md:text-5xl tracking-widest'>Stack & Tooling</h1>
-                        <p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
-                            The languages, frameworks, and engineering tools I rely on to architect,
-                            build, and ship full-stack applications with high reliability.
-                        </p>
-                    </div>
-                    <Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
-                        <Link href="/about">Learn More About Me</Link>
-                        <ArrowRight />
-                    </Button>
-                </div>
-                
-                {/*divider*/}
-                <hr className="text-gray-800 h-2 rounded-full mt-2 w-full" />
+				{/*bento cards*/}
+				<div></div>
+			</div>
 
-                {/*content*/}
-                <MyStacks />
-            </section>
+			{/*Stacks*/}
+			<section
+				id="stacks"
+				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 shadow pt-4 pb-4">
+				{/*header*/}
+				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+					<div className="flex flex-col space-y-4">
+						<h1 className="font-lora text-3xl md:text-5xl tracking-widest">
+							Stack & Tooling
+						</h1>
+						<p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
+							The languages, frameworks, and engineering tools I
+							rely on to architect, build, and ship full-stack
+							applications with high reliability.
+						</p>
+					</div>
+					<Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
+						<Link href="/about">Learn More About Me</Link>
+						<ArrowRight />
+					</Button>
+				</div>
+
+				{/*divider*/}
+				<hr className="text-gray-800 h-2 rounded-full mt-2 w-full" />
+
+				{/*content*/}
+				<MyStacks />
+			</section>
+
+			{/*Service*/}
+			<section
+				id="services"
+				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 shadow pt-4 pb-4">
+				{/*header*/}
+				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+					<div className="flex flex-col space-y-4">
+						<h1 className="font-lora text-3xl md:text-5xl tracking-widest">
+							Services & Capabilities
+						</h1>
+						<p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
+							I help ambitious individuals and high-velocity
+							businesses turn ideas into working, resilient
+							products — from custom interfaces to full-stack
+							platforms.
+						</p>
+					</div>
+					<Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
+						<Link href="/about">Start A Project</Link>
+						<ArrowRight />
+					</Button>
+				</div>
+
+				{/*content*/}
+				<div className="mt-5">
+					<MyServices />
+				</div>
+
+				{/*CTA*/}
+				<div className="flex flex-col md:flex-row justify-between bg-accent-foreground w-full rounded-md mt-5 p-6 min-h-40 md:h-40 items-center">
+					<div className="flex flex-col gap-2 justify-start items-start">
+						<h1 className="font-lora text-md md:text-3xl text-primary-foreground tracking-wider">
+							Have a project in mind? Let's build it together.
+						</h1>
+						<p className="text-sm text-neutral-300 font-mono tracking-wider text-[10px] md:text-sm">
+							Available for select freelance contracts, MVP
+							builds, and architectural consulting.
+						</p>
+					</div>
+					<Button
+						variant="secondary"
+						className="hover:bg-amber-50 cursor-pointer md:w-70 h-12 uppercase tracking-widest text-[8px] mt-7 md:mt-0 w-full">
+						Initiate Discussion
+						<MoveUpRight />
+					</Button>
+				</div>
+				{/*content*/}
+				<div className="mt-5">
+					<MyServices />
+				</div>
+			</section>
+
+			{/* Blogs */}
+			<div className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 shadow pt-4 pb-4">
+				{/*header*/}
+				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+					<div className="flex flex-col space-y-4">
+						<h1 className="font-lora text-3xl md:text-5xl tracking-widest">
+							Blogs & Writing
+						</h1>
+						<p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
+							Thoughts, breakdowns, and engineering lessons from
+							what I'm building and learning — written as I go,
+							not after the fact.
+						</p>
+					</div>
+					<Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
+						<Link href="/blogs">View All Blogs</Link>
+						<ArrowRight />
+					</Button>
+				</div>
+				{/* content */}
+				<div className="mt-5">
+					<MyBlogs />
+				</div>
+			</div>
+
+			{/*Initiate conversation */}
+			<div className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 shadow pt-4 pb-4">
+				{/*header*/}
+				<div className="flex flex-col md:flex-row justify-center items-center md:items-end gap-6">
+					<div className="flex flex-col items-center space-y-4">
+						<h1 className="font-lora text-xl md:text-5xl tracking-widest text-center">
+							Let's Build Something Together
+						</h1>
+						<p className="text-center font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
+							Whether you need an architectural consultation, an
+							end-to-end web system, or a high-polish visual
+							experience — reach out across any channel below.
+						</p>
+					</div>
+				</div>
+				{/*content*/}
+				<div className="flex bg-accent-foreground rounded-md p-6 mt-5"></div>
+			</div>
+
+			{/*Navbar */}
+			<div></div>
 		</div>
 	);
 };

@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import { Lora, Geist_Mono } from 'next/font/google';
+
 import './globals.css';
+
 import { cn } from '@/lib/utils';
 import { DisableBrowserContext } from '@/context/disableBrowserContext';
+import { NavBar } from '@/components/layouts/NavBar';
 
-// Primary font
 const loraSerif = Lora({ variable: '--font-lora', subsets: ['latin'] });
 
-// Secondary font
 const geistMono = Geist_Mono({
 	variable: '--font-geist-mono',
 	subsets: ['latin'],
@@ -19,7 +20,9 @@ export const metadata: Metadata = {
 		"I'am Anoop George! A solo freelance developer who loves to build apps, software and games. This is my portfolio website to showcase my works and timelines.",
 };
 
-export default function RootLayout({ children }: LayoutProps<'/'>) {
+export default function RootLayout({
+	children,
+}: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html
 			lang="en"
@@ -28,11 +31,16 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 				'antialiased',
 				loraSerif.variable,
 				geistMono.variable,
-            )}>
-            <body className="min-h-full flex flex-col">
-                <DisableBrowserContext />
-                {children}
-            </body>
+			)}>
+			<body className="min-h-full">
+				<DisableBrowserContext />
+
+				{/* Global navbar */}
+				<NavBar />
+
+				{/* Current page */}
+				{children}
+			</body>
 		</html>
 	);
 }
