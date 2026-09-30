@@ -31,7 +31,7 @@ const Home = () => {
     
 	return (
 		<div className="flex flex-col min-h-screen gap-4 bg-background text-foreground items-center">
-            <div className={`fixed top-0 inset-x-0 z-50 flex justify-center transition-transform duration-300 ${hideNavbar ? '-translate-y-full' : 'translate-y-0'}`}>
+            <div className={`fixed top-0 inset-x-0 z-50 flex justify-center transition-transform duration-300 md:${hideNavbar ? '-translate-y-full' : 'translate-y-0'}`}>
 				<NavBar />
 			</div>
 
