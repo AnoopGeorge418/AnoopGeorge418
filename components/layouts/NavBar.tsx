@@ -4,9 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+
 import { Zap } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { ImLinkedin } from 'react-icons/im';
+
 import {
 	UserRound,
 	LucideHome,
@@ -15,7 +18,9 @@ import {
 	Code2,
 	NotebookText,
 } from 'lucide-react';
+
 import { Button } from '../ui/button';
+
 import {
 	Tooltip,
 	TooltipContent,
@@ -24,50 +29,177 @@ import {
 } from '@/components/ui/tooltip';
 
 const navItems = [
-	{ name: 'Home', href: '#hero', icon: LucideHome },
+	{ name: 'Home', href: '/#hero', icon: LucideHome },
 	{ name: 'Works', href: '/works', icon: BriefcaseBusiness },
 	{ name: 'About', href: '/about', icon: UserRound },
-	{ name: 'Services', href: '#services', icon: Layers3 },
-	{ name: 'Stacks', href: '#stacks', icon: Code2 },
+	{ name: 'Services', href: '/#services', icon: Layers3 },
+	{ name: 'Stacks', href: '/#stacks', icon: Code2 },
 	{ name: 'Blogs', href: '/blogs', icon: NotebookText },
 ];
 
+// Mobile navigation intentionally excludes homepage sections.
+const mobileNavItems = navItems.filter(
+	(item) => !['Services', 'Stacks'].includes(item.name),
+);
+
 export const NavBar = () => {
-	// to get the current path
 	const pathname = usePathname();
+
+	const [hideNavbar, setHideNavbar] = useState(false);
+	const [activeSection, setActiveSection] = useState('hero');
+
+	// Desktop navbar scroll behavior
+	useEffect(() => {
+		let lastY = window.scrollY;
+
+		const onScroll = () => {
+			const currentY = window.scrollY;
+
+			if (currentY > lastY && currentY > 80) {
+				setHideNavbar(true);
+			} else if (currentY < lastY) {
+				setHideNavbar(false);
+			}
+
+			lastY = currentY;
+		};
+
+		window.addEventListener('scroll', onScroll, { passive: true });
+
+		return () => {
+			window.removeEventListener('scroll', onScroll);
+		};
+	}, []);
+
+	// Track homepage sections
+	useEffect(() => {
+		if (pathname !== '/') {
+			setActiveSection('hero');
+			return;
+		}
+
+		const sections = ['hero', 'works', 'stacks', 'services'];
+
+		const handleScroll = () => {
+			const scrollPosition = window.scrollY + window.innerHeight * 0.35;
+
+			let currentSection = 'hero';
+
+			for (const sectionId of sections) {
+				const section = document.getElementById(sectionId);
+
+				if (!section) {
+					continue;
+				}
+
+				if (scrollPosition >= section.offsetTop) {
+					currentSection = sectionId;
+				}
+			}
+
+			setActiveSection(currentSection);
+		};
+
+		handleScroll();
+
+		window.addEventListener('scroll', handleScroll, { passive: true });
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, [pathname]);
+
+	// Desktop active navigation
+	const isActive = (href: string, name: string) => {
+		// Homepage section navigation
+		if (pathname === '/') {
+			if (name === 'Home') {
+				return activeSection === 'hero';
+			}
+
+			if (name === 'Works') {
+				return activeSection === 'works';
+			}
+
+			if (name === 'Stacks') {
+				return activeSection === 'stacks';
+			}
+
+			if (name === 'Services') {
+				return activeSection === 'services';
+			}
+
+			return false;
+		}
+
+		// Regular pages
+		if (!href.includes('#')) {
+			return pathname === href;
+		}
+
+		return false;
+	};
+
+	// Mobile active navigation
+	//
+	// On the homepage, Home remains active regardless
+	// of which section the user is currently viewing.
+	const isMobileActive = (href: string, name: string) => {
+		if (pathname === '/') {
+			return name === 'Home';
+		}
+
+		if (!href.includes('#')) {
+			return pathname === href;
+		}
+
+		return false;
+	};
 
 	return (
 		<>
-			{/* Desktop */}
-			<nav className="mx-auto hidden h-15 w-[70%] items-center justify-between rounded-full p-2 shadow-[0_0_10px_rgba(0,0,0,0.10)] md:mt-5 md:flex md:px-10">
+			{/* =========================
+			    Desktop Navbar
+			========================= */}
+			<nav
+				className={cn(
+					'fixed top-0 left-1/2 z-50 hidden',
+					'h-15 w-[70%] -translate-x-1/2',
+					'items-center justify-between',
+					'rounded-full p-2',
+					'shadow-[0_0_10px_rgba(0,0,0,0.10)]',
+					'transition-transform duration-300 ease-in-out',
+					'md:mt-5 md:flex md:px-10',
+					hideNavbar ? '-translate-y-[150%]' : 'translate-y-0',
+				)}>
 				{/* Logo */}
-				<Link href="/" className="shrink-0 items-center gap-1 flex">
+				<Link href="/" className="flex shrink-0 items-center gap-1">
 					<Image
 						src="/logo.png"
 						alt="Anoop George logo"
 						width={20}
 						height={20}
 					/>
+
 					<h1 className="font-lora text-xl font-black uppercase tracking-widest">
 						Anoop George
 					</h1>
 				</Link>
 
-				{/* Navigation */}
+				{/* Desktop Navigation */}
 				<div className="flex items-center gap-10 uppercase text-gray-500">
 					{navItems.map((item) => {
-						const isActive = pathname === item.href;
-						// const Icon = item.icon;
+						const active = isActive(item.href, item.name);
 
 						return (
 							<Link
 								key={item.name}
 								href={item.href}
 								className={cn(
-									'font-mono text-sm tracking-widest transition-all',
-									'hover:text-gray-950 hover:underline font-bold',
-									isActive &&
-										'font-bold text-gray-950 underline underline-offset-4',
+									'font-mono text-sm font-bold tracking-widest transition-all',
+									'hover:text-gray-950 hover:underline',
+									active &&
+										'text-gray-950 underline underline-offset-4',
 								)}>
 								{item.name}
 							</Link>
@@ -75,7 +207,7 @@ export const NavBar = () => {
 					})}
 				</div>
 
-				{/* Social Links + CTA */}
+				{/* Desktop Social Links + CTA */}
 				<div className="flex items-center gap-6">
 					<Link
 						href="https://github.com/AnoopGeorge418"
@@ -93,23 +225,37 @@ export const NavBar = () => {
 						<ImLinkedin className="h-5 w-5 transition-opacity hover:opacity-60" />
 					</Link>
 
-					<Button className="h-10 w-45 cursor-pointer tracking-widest uppercase gap-2">
+					<Button className="h-10 w-45 cursor-pointer gap-2 uppercase tracking-widest">
 						<Zap className="h-5 w-5" />
 						Get In Touch
 					</Button>
 				</div>
 			</nav>
 
-			{/* Mobile tab bar */}
+			{/* =========================
+			    Mobile Bottom Tab Bar
+			========================= */}
 			<TooltipProvider>
-				<nav className="fixed right-0 bottom-3 left-0 z-50 mx-auto w-[96%] rounded-2xl border bg-white/95 p-2 shadow-[0_0_15px_rgba(0,0,0,0.12)] backdrop-blur-md md:hidden">
+				<nav
+					className="
+						fixed right-0 bottom-3 left-0
+						z-50
+						mx-auto
+						w-[96%]
+						rounded-2xl
+						border
+						bg-gray-100/95
+						p-2
+						shadow-[0_0_15px_rgba(0,0,0,0.12)]
+						backdrop-blur-md
+						md:hidden
+					">
 					<div className="flex flex-nowrap items-center justify-around">
-						{/* Navigation Icons */}
-						{navItems.map((item) => {
+						{/* Mobile Navigation */}
+						{mobileNavItems.map((item) => {
 							const Icon = item.icon;
-							const isActive = item.href.startsWith('#')
-								? false
-								: pathname === item.href;
+
+							const active = isMobileActive(item.href, item.name);
 
 							return (
 								<Tooltip key={item.name}>
@@ -118,10 +264,12 @@ export const NavBar = () => {
 											href={item.href}
 											aria-label={item.name}
 											className={cn(
-												'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl transition-all',
-												isActive
-													? 'bg-black text-white'
-													: 'text-gray-500 hover:bg-gray-100 hover:text-gray-900',
+												'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl',
+												'transition-all duration-200',
+												active &&
+													'bg-white text-black shadow-[0_2px_8px_rgba(0,0,0,0.15)]',
+												!active &&
+													'text-gray-500 hover:bg-gray-200 hover:text-gray-900',
 											)}>
 											<Icon className="h-5 w-5" />
 										</Link>
@@ -142,7 +290,15 @@ export const NavBar = () => {
 									target="_blank"
 									rel="noopener noreferrer"
 									aria-label="GitHub"
-									className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-gray-500 transition hover:bg-gray-100 hover:text-gray-900">
+									className="
+										flex h-10 w-10 shrink-0
+										items-center justify-center
+										rounded-xl
+										text-gray-500
+										transition
+										hover:bg-gray-200
+										hover:text-gray-900
+									">
 									<FaGithub className="h-5 w-5" />
 								</Link>
 							</TooltipTrigger>
@@ -160,7 +316,15 @@ export const NavBar = () => {
 									target="_blank"
 									rel="noopener noreferrer"
 									aria-label="LinkedIn"
-									className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-gray-500 transition hover:bg-gray-100 hover:text-gray-900">
+									className="
+										flex h-10 w-10 shrink-0
+										items-center justify-center
+										rounded-xl
+										text-gray-500
+										transition
+										hover:bg-gray-200
+										hover:text-gray-900
+									">
 									<ImLinkedin className="h-5 w-5" />
 								</Link>
 							</TooltipTrigger>
@@ -169,13 +333,22 @@ export const NavBar = () => {
 								<p>LinkedIn</p>
 							</TooltipContent>
 						</Tooltip>
-						{/* Get in touch */}
+
+						{/* Get In Touch */}
 						<Tooltip>
 							<TooltipTrigger>
 								<Link
-									href="#hero"
-									aria-label="Get In touch"
-									className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-gray-500 transition hover:bg-gray-100 hover:text-gray-900">
+									href="/#hero"
+									aria-label="Get In Touch"
+									className="
+										flex h-10 w-10 shrink-0
+										items-center justify-center
+										rounded-xl
+										text-gray-500
+										transition
+										hover:bg-gray-200
+										hover:text-gray-900
+									">
 									<Zap className="h-5 w-5" />
 								</Link>
 							</TooltipTrigger>
