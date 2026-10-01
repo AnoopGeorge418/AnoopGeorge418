@@ -6,6 +6,9 @@ import Link from 'next/link';
 import { MyStacks } from '@/components/Sections/Stacks';
 import { MyServices } from '@/components/Sections/Services';
 import { MyBlogs } from '@/components/Sections/Blogs';
+import { Footer } from '../components/layouts/Footer';
+import { ConversationSection } from '@/components/Sections/Conversation';
+import { Card } from '@/components/ui/card';
 
 const Home = () => {
 	return (
@@ -66,12 +69,14 @@ const Home = () => {
 							</span>
 							<MoveUpRight className="w-2 h-2" />
 						</Button>
-						<Button className="flex justify-center items-center w-80 md:w-56 cursor-pointer h-15 md:h-12 gap-2 border border-gray-300 bg-white/80 hover:bg-neutral-100 text-neutral-600 rounded-full md:rounded-md">
-							<span className="font-mono tracking-widest uppercase text-[8px] md:text-sm">
-								<Link href="#works">Explore My Works</Link>
-							</span>
-							<MoveDown className="w-2 h-2" />
-						</Button>
+						<Link href="#works" className="cursor-pointer">
+							<Button className="flex justify-center items-center w-80 md:w-56 h-15 md:h-12 gap-2 border border-gray-300 bg-white/80 hover:bg-neutral-100 text-neutral-600 rounded-full md:rounded-md">
+								<span className="font-mono tracking-widest uppercase text-[8px] md:text-sm">
+									Explore My Works
+								</span>
+								<MoveDown className="w-2 h-2" />
+							</Button>
+						</Link>
 					</div>
 
 					{/*tags*/}
@@ -97,7 +102,7 @@ const Home = () => {
 			{/*Works*/}
 			<div
 				id="works"
-				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 shadow pt-4 pb-4">
+				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 pt-4 pb-4">
 				{/*header*/}
 				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
 					<div className="flex flex-col space-y-4">
@@ -116,9 +121,6 @@ const Home = () => {
 					</Button>
 				</div>
 
-				{/*divider*/}
-				<hr className="text-gray-800 h-2 rounded-full mt-2 w-full" />
-
 				{/*bento cards*/}
 				<div></div>
 			</div>
@@ -126,7 +128,7 @@ const Home = () => {
 			{/*Stacks*/}
 			<section
 				id="stacks"
-				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 shadow pt-4 pb-4">
+				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 pt-4 pb-4">
 				{/*header*/}
 				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
 					<div className="flex flex-col space-y-4">
@@ -145,9 +147,6 @@ const Home = () => {
 					</Button>
 				</div>
 
-				{/*divider*/}
-				<hr className="text-gray-800 h-2 rounded-full mt-2 w-full" />
-
 				{/*content*/}
 				<MyStacks />
 			</section>
@@ -155,7 +154,7 @@ const Home = () => {
 			{/*Service*/}
 			<section
 				id="services"
-				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 shadow pt-4 pb-4">
+				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 pt-4 pb-4">
 				{/*header*/}
 				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
 					<div className="flex flex-col space-y-4">
@@ -205,7 +204,7 @@ const Home = () => {
 			</section>
 
 			{/* Blogs */}
-			<div className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 shadow pt-4 pb-4">
+			<div className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 pt-4 pb-4">
 				{/*header*/}
 				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
 					<div className="flex flex-col space-y-4">
@@ -230,11 +229,11 @@ const Home = () => {
 			</div>
 
 			{/*Initiate conversation */}
-			<div className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 shadow pt-4 pb-4">
+			<div className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 pt-4 pb-4">
 				{/*header*/}
 				<div className="flex flex-col md:flex-row justify-center items-center md:items-end gap-6">
 					<div className="flex flex-col items-center space-y-4">
-						<h1 className="font-lora text-xl md:text-5xl tracking-widest text-center">
+						<h1 className="font-lora text-xl md:text-5xl tracking-widest text-center md:w-200">
 							Let's Build Something Together
 						</h1>
 						<p className="text-center font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
@@ -245,11 +244,15 @@ const Home = () => {
 					</div>
 				</div>
 				{/*content*/}
-				<div className="flex bg-accent-foreground rounded-md p-6 mt-5"></div>
+				<div className="mt-5">
+					<ConversationSection />
+				</div>
 			</div>
 
 			{/*Navbar */}
-			<div></div>
+			<div className="mt-5">
+				<Footer />
+			</div>
 		</div>
 	);
 };
