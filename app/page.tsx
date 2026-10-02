@@ -197,10 +197,6 @@ const Home = () => {
 						<MoveUpRight />
 					</Button>
 				</div>
-				{/*content*/}
-				<div className="mt-5">
-					<MyServices />
-				</div>
 			</section>
 
 			{/* Blogs */}
