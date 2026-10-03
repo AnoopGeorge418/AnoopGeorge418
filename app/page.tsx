@@ -193,11 +193,6 @@ const Home = () => {
 					<ConversationSection />
 				</div>
 			</div>
-
-			{/*Navbar */}
-			<div className="mt-5">
-				<Footer />
-			</div>
 		</div>
 	);
 };

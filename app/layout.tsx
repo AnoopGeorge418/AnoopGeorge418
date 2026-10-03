@@ -6,6 +6,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import { DisableBrowserContext } from '@/context/disableBrowserContext';
 import { NavBar } from '@/components/layouts/NavBar';
+import { Footer } from '@/components/layouts/Footer';
 
 const loraSerif = Lora({ variable: '--font-lora', subsets: ['latin'] });
 
@@ -40,6 +41,9 @@ export default function RootLayout({
 
 				{/* Current page */}
 				{children}
+
+				{/*Global Footer*/}
+				<Footer />
 			</body>
 		</html>
 	);
