@@ -6,13 +6,12 @@ import Link from 'next/link';
 import { ContactInfo } from '../Sections/Conversation';
 
 const directory = [
+    { label: 'Home', href: '/#hero' },
 	{ label: 'Works', href: '/works' },
 	{ label: 'About', href: '/about' },
 	{ label: 'Stack', href: '/#stacks' },
 	{ label: 'Services', href: '/#services' },
-	{ label: 'Testimonials', href: '/#testimonials' },
 	{ label: 'Blogs', href: '/#blogs' },
-	{ label: 'Contact', href: '/#contact' },
 ];
 
 const connect = [
@@ -23,11 +22,8 @@ const connect = [
 	{ label: 'ReadCV / Resume', href: '#' },
 ];
 
-const headingClass =
-	'font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-secondary/50';
-
-const linkClass =
-	'w-fit font-mono text-xs text-secondary/60 transition-colors hover:text-secondary focus-visible:text-secondary focus-visible:outline-none focus-visible:underline underline-offset-4';
+const headingClass = 'font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-secondary/50';
+const linkClass = 'w-fit font-mono text-xs text-secondary/60 transition-colors hover:text-secondary focus-visible:text-secondary focus-visible:outline-none focus-visible:underline underline-offset-4';
 
 export const Footer = () => {
 	const [copied, setCopied] = useState(false);
