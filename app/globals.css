@@ -4,7 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
 @theme inline {
 	--font-lora: var(--font-lora);
 	--font-mono: var(--font-geist-mono);

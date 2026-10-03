@@ -80,9 +80,7 @@ export const Footer = () => {
 				</div>
 
 				{/* Directory */}
-				<nav
-					aria-label="Directory"
-					className="flex flex-col gap-3">
+				<nav aria-label="Directory" className="flex flex-col gap-3">
 					<p className={headingClass}>Directory</p>
 
 					{directory.map((item) => (
