@@ -1,7 +1,3 @@
 export const WorksComponent = () => {
-	return (
-		<div className="">
-			Hmm
-		</div>
-	);
+	return <div className="">Hmm</div>;
 };
