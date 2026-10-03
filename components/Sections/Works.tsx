@@ -1,185 +1,105 @@
-import { getGithubRepositories } from '@/lib/github';
-import Image from 'next/image';
+'use client';
 
-export const WorksSection = async () => {
-	const works = await getGithubRepositories();
+import { useState } from 'react';
+
+import { cn } from '@/lib/utils';
+import { WORK_FILTERS, WORKS, type FilterId } from '@/lib/works';
+import { WorkShowcase } from '@/components/Sections/WorkShowcase';
+
+const countFor = (id: FilterId) =>
+	id === 'all'
+		? WORKS.length
+		: WORKS.filter((work) => work.categories.includes(id)).length;
+
+/**
+ * Filterable list of projects.
+ * Pass `limit` to cap how many are shown (used on the home page).
+ */
+export const MyWorks = ({ limit }: { limit?: number }) => {
+	const [active, setActive] = useState<FilterId>('all');
+
+	const matching =
+		active === 'all'
+			? WORKS
+			: WORKS.filter((work) => work.categories.includes(active));
+
+	const visible = limit ? matching.slice(0, limit) : matching;
+	const activeLabel =
+		WORK_FILTERS.find((filter) => filter.id === active)?.label ?? '';
 
 	return (
-		<section className="w-full rounded-md bg-accent p-4 pt-5">
-			<div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-				{works.map((work) => (
-					<article
-						key={work.workName}
-						className="overflow-hidden rounded-xl border bg-background">
-						{/* Preview Image */}
+		<div className="flex w-full flex-col gap-5">
+			{/* filter chips */}
+			<div
+				role="group"
+				aria-label="Filter works by category"
+				className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] md:flex-wrap [&::-webkit-scrollbar]:hidden">
+				{WORK_FILTERS.map((filter) => {
+					const isActive = filter.id === active;
+					const count = countFor(filter.id);
 
-						<div className="aspect-video w-full overflow-hidden bg-muted">
-							{work.info.previewImage ? (
-								<Image 
-									src={work.info.previewImage}
-                                    alt={work.info.title}
-                                    width={100}
-									height={100}
-									className="h-full w-full object-cover"
-                                />
-							) : (
-								<div className="flex h-full items-center justify-center">
-									<span className="text-sm text-muted-foreground">
-										No preview available
-									</span>
-								</div>
-							)}
-						</div>
-
-						{/* Content */}
-
-						<div className="p-5">
-							{/* Tags */}
-
-							<div className="mb-3 flex flex-wrap gap-2">
-								<span className="rounded-full border px-3 py-1 text-xs">
-									{work.progressTag}
-								</span>
-
-								{work.specificTag && (
-									<span className="rounded-full border px-3 py-1 text-xs">
-										{work.specificTag}
-									</span>
-								)}
-							</div>
-
-							{/* Title */}
-
-							<h2 className="text-xl font-semibold">
-								{work.info.title}
-							</h2>
-
-							{/* Description */}
-
-							<p className="mt-2 line-clamp-3 text-sm text-muted-foreground">
-								{work.info.desc}
-							</p>
-
-							{/* Stack */}
-
-							<div className="mt-4 flex flex-wrap gap-2">
-								{work.info.stack.map((technology) => (
-									<span
-										key={technology}
-										className="rounded-md bg-muted px-2 py-1 text-xs">
-										{technology}
-									</span>
-								))}
-							</div>
-
-							{/* Actions */}
-
-							<div className="mt-6 flex gap-3">
-								<a
-									href={work.info.viewWorkUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="rounded-lg bg-primary px-4 py-2 text-sm text-primary-foreground">
-									View Work
-								</a>
-
-								<a
-									href={work.repository.githubUrl}
-									target="_blank"
-									rel="noopener noreferrer"
-									className="rounded-lg border px-4 py-2 text-sm">
-									GitHub
-								</a>
-							</div>
-
-							{/* Repository */}
-
-							<div className="mt-5 border-t pt-4">
-								<div className="flex items-center justify-between">
-									<span className="text-xs text-muted-foreground">
-										Repository
-									</span>
-
-									<span className="text-xs">
-										{work.repository.visibility}
-									</span>
-								</div>
-
-								{work.repository.currentVersion && (
-									<p className="mt-1 text-xs text-muted-foreground">
-										Version:{' '}
-										{work.repository.currentVersion}
-									</p>
-								)}
-							</div>
-
-							{/* Deployment */}
-
-							{work.deployment && (
-								<div className="mt-4 border-t pt-4">
-									<p className="text-xs text-muted-foreground">
-										{work.deployment.tag}
-									</p>
-
-									<h3 className="mt-1 text-sm font-medium">
-										{work.deployment.title}
-									</h3>
-
-									<a
-										href={work.deployment.liveSiteUrl}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="mt-2 inline-block text-xs underline">
-										Visit Live Site
-									</a>
-								</div>
-							)}
-
-							{/* YouTube */}
-
-							{work.youtube && (
-								<div className="mt-4 border-t pt-4">
-									<h3 className="text-sm font-medium">
-										{work.youtube.title}
-									</h3>
-
-									<p className="mt-1 text-xs text-muted-foreground">
-										{work.youtube.desc}
-									</p>
-								</div>
-							)}
-
-							{/* Blog */}
-
-							{work.blog && (
-								<div className="mt-4 border-t pt-4">
-									<div className="flex items-center justify-between">
-										<h3 className="text-sm font-medium">
-											{work.blog.title}
-										</h3>
-
-										<span className="text-xs text-muted-foreground">
-											{work.blog.length}
-										</span>
-									</div>
-
-									<p className="mt-1 text-xs text-muted-foreground">
-										{work.blog.desc}
-									</p>
-
-									<a
-										href={work.blog.blogUrl}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="mt-2 inline-block text-xs underline">
-										Read Blog
-									</a>
-								</div>
-							)}
-						</div>
-					</article>
-				))}
+					return (
+						<button
+							key={filter.id}
+							type="button"
+							aria-pressed={isActive}
+							onClick={() => setActive(filter.id)}
+							className={cn(
+								'inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-full border px-4 py-2 font-mono text-[10px] uppercase tracking-widest transition-colors md:text-xs',
+								'focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none',
+								isActive
+									? 'border-primary bg-primary text-primary-foreground'
+									: 'bg-background text-muted-foreground hover:bg-muted hover:text-foreground',
+								!isActive && count === 0 && 'opacity-60',
+							)}>
+							{filter.label}
+							<span
+								className={cn(
+									'text-[9px]',
+									isActive ? 'opacity-70' : 'opacity-50',
+								)}>
+								{count}
+							</span>
+						</button>
+					);
+				})}
 			</div>
-		</section>
+
+			<p
+				aria-live="polite"
+				className="font-mono text-[10px] tracking-widest text-muted-foreground uppercase">
+				Showing {visible.length} of {matching.length}{' '}
+				{active === 'all' ? 'projects' : `${activeLabel} projects`}
+			</p>
+
+			{/* list */}
+			{visible.length > 0 ? (
+				<div className="w-full divide-y rounded-md bg-accent p-4 md:p-6">
+					{visible.map((work, index) => (
+						<WorkShowcase
+							key={work.slug}
+							work={work}
+							index={index}
+						/>
+					))}
+				</div>
+			) : (
+				<div className="flex w-full flex-col items-center gap-3 rounded-md border border-dashed bg-accent px-6 py-16 text-center">
+					<p className="font-lora text-xl tracking-wide md:text-2xl">
+						Nothing here yet
+					</p>
+					<p className="max-w-md font-mono text-xs leading-6 text-muted-foreground">
+						I haven&apos;t shipped a {activeLabel} project yet — but
+						it&apos;s on the list. Check back soon.
+					</p>
+					<button
+						type="button"
+						onClick={() => setActive('all')}
+						className="mt-2 cursor-pointer rounded-full border bg-background px-4 py-2 font-mono text-[10px] uppercase tracking-widest hover:bg-muted">
+						Show all projects
+					</button>
+				</div>
+			)}
+		</div>
 	);
 };

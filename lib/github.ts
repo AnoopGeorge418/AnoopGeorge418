@@ -1,6 +1,5 @@
-import type { RepoVisibility, WorkDataType } from '@/types/work';
-
 import { WorkMetadata } from '@/data/works';
+import { RepoVisibility, WorkDataType } from '@/types/works';
 
 const GITHUB_API = 'https://api.github.com';
 

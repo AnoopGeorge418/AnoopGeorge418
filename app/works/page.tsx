@@ -1,34 +1,40 @@
+import type { Metadata } from 'next';
+
+import { MyWorks } from '@/components/Sections/Works';
 import { Footer } from '@/components/layouts/Footer';
-import { WorksSection } from '@/components/Sections/Works';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+
+export const metadata: Metadata = {
+	title: 'Works - Anoop George',
+	description:
+		'Projects across web, mobile, games and 3D — built and shipped by Anoop George, a solo freelance developer.',
+};
 
 const WorksPage = () => {
 	return (
-		<div className="flex flex-col dark:bg-black min-h-screen gap-4 bg-background items-center mt-20">
-			{/*Works*/}
-			<div className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 pt-4 pb-4">
-				{/*header*/}
-				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-					<div className="flex flex-col space-y-4">
-						<h1 className="font-lora text-3xl md:text-5xl tracking-widest">
-							Works
-						</h1>
-						<p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
-							A collection of projects I've built and shipped —
-							from full-stack apps to experiments. Each one
-							reflects what I was learning at the time.
-						</p>
-					</div>
+		<div className="flex min-h-screen flex-col items-center gap-4 bg-background text-foreground">
+			<section className="flex w-full flex-col gap-10 px-6 pt-16 pb-24 md:px-10 md:pt-40 md:pb-4">
+				{/* intro */}
+				<div className="flex flex-col gap-4">
+					<span className="inline-flex w-fit items-center gap-2 rounded-full border bg-background px-4 py-1.5 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+						<span className="size-2 animate-pulse rounded-full bg-emerald-500" />
+						Selected Works
+					</span>
+					<h1 className="font-lora text-4xl tracking-widest md:text-6xl">
+						Works
+					</h1>
+					<p className="max-w-md font-mono text-[10px] leading-relaxed tracking-wider text-neutral-600 md:max-w-190 md:text-sm">
+						Platforms, apps, tools and games I&apos;ve built — from
+						full-stack monorepos to low-poly worlds. Filter by
+						discipline to see what I&apos;ve made in each.
+					</p>
 				</div>
 
-				{/*bento cards*/}
-				<div className="mt-5">
-					<WorksSection />
-				</div>
+				<MyWorks />
+			</section>
+
+			<div className="mt-5 w-full">
+				<Footer />
 			</div>
-			<Footer />
 		</div>
 	);
 };
