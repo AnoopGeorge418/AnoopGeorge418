@@ -78,7 +78,6 @@ export const NavBar = () => {
 	// ==========================================
 	useEffect(() => {
 		// Only track sections on homepage.
-		// No synchronous setState here.
 		if (pathname !== '/') {
 			return;
 		}
@@ -246,132 +245,167 @@ export const NavBar = () => {
 			</nav>
 
 			{/* ========================================
-			    Mobile Bottom Tab Bar
+			    Mobile Navigation
 			======================================== */}
 			<TooltipProvider>
-				<nav
-					className="
-						fixed right-0 bottom-3 left-0
-						z-50
-						mx-auto
-						w-[96%]
-						rounded-2xl
-						border
-						bg-gray-100/95
-						p-2
-						shadow-[0_0_15px_rgba(0,0,0,0.12)]
-						backdrop-blur-md
-						md:hidden
-					">
-					<div className="flex flex-nowrap items-center justify-around">
-						{/* Navigation */}
-						{mobileNavItems.map((item) => {
-							const Icon = item.icon;
+				<>
+					{/* ========================================
+					    Mobile Bottom Tab Bar
+					======================================== */}
+					<nav
+						className="
+							fixed
+							right-0
+							bottom-3
+							left-0
+							z-50
+							mx-auto
+							w-[96%]
+							rounded-2xl
+							border
+							bg-gray-100/95
+							p-2
+							shadow-[0_0_15px_rgba(0,0,0,0.12)]
+							backdrop-blur-md
+							md:hidden
+						">
+						<div className="flex flex-nowrap items-center justify-around">
+							{/* Navigation */}
+							{mobileNavItems.map((item) => {
+								const Icon = item.icon;
 
-							const active = isMobileActive(item.href, item.name);
+								const active = isMobileActive(
+									item.href,
+									item.name,
+								);
 
-							return (
-								<Tooltip key={item.name}>
-									<TooltipTrigger>
-										<Link
-											href={item.href}
-											aria-label={item.name}
-											className={cn(
-												'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl',
-												'transition-all duration-200',
-												active &&
-													'bg-white text-black shadow-[0_2px_8px_rgba(0,0,0,0.15)]',
-												!active &&
-													'text-gray-500 hover:bg-gray-200 hover:text-gray-900',
-											)}>
-											<Icon className="h-5 w-5" />
-										</Link>
-									</TooltipTrigger>
+								return (
+									<Tooltip key={item.name}>
+										<TooltipTrigger>
+											<Link
+												href={item.href}
+												aria-label={item.name}
+												className={cn(
+													'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl',
+													'transition-all duration-200',
+													active &&
+														'bg-white text-black shadow-[0_2px_8px_rgba(0,0,0,0.15)]',
+													!active &&
+														'text-gray-500 hover:bg-gray-200 hover:text-gray-900',
+												)}>
+												<Icon className="h-5 w-5" />
+											</Link>
+										</TooltipTrigger>
 
-									<TooltipContent side="top">
-										<p>{item.name}</p>
-									</TooltipContent>
-								</Tooltip>
-							);
-						})}
+										<TooltipContent side="top">
+											<p>{item.name}</p>
+										</TooltipContent>
+									</Tooltip>
+								);
+							})}
 
-						{/* GitHub */}
-						<Tooltip>
-							<TooltipTrigger>
-								<Link
-									href="https://github.com/AnoopGeorge418"
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label="GitHub"
-									className="
-										flex h-10 w-10 shrink-0
-										items-center justify-center
-										rounded-xl
-										text-gray-500
-										transition
-										hover:bg-gray-200
-										hover:text-gray-900
-									">
-									<FaGithub className="h-5 w-5" />
-								</Link>
-							</TooltipTrigger>
+							{/* GitHub */}
+							<Tooltip>
+								<TooltipTrigger>
+									<Link
+										href="https://github.com/AnoopGeorge418"
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="GitHub"
+										className="
+											flex
+											h-10
+											w-10
+											shrink-0
+											items-center
+											justify-center
+											rounded-xl
+											text-gray-500
+											transition
+											hover:bg-gray-200
+											hover:text-gray-900
+										">
+										<FaGithub className="h-5 w-5" />
+									</Link>
+								</TooltipTrigger>
 
-							<TooltipContent side="top">
-								<p>GitHub</p>
-							</TooltipContent>
-						</Tooltip>
+								<TooltipContent side="top">
+									<p>GitHub</p>
+								</TooltipContent>
+							</Tooltip>
 
-						{/* LinkedIn */}
-						<Tooltip>
-							<TooltipTrigger>
-								<Link
-									href="https://www.linkedin.com/in/anoop-george418/"
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label="LinkedIn"
-									className="
-										flex h-10 w-10 shrink-0
-										items-center justify-center
-										rounded-xl
-										text-gray-500
-										transition
-										hover:bg-gray-200
-										hover:text-gray-900
-									">
-									<ImLinkedin className="h-5 w-5" />
-								</Link>
-							</TooltipTrigger>
+							{/* LinkedIn */}
+							<Tooltip>
+								<TooltipTrigger>
+									<Link
+										href="https://www.linkedin.com/in/anoop-george418/"
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="LinkedIn"
+										className="
+											flex
+											h-10
+											w-10
+											shrink-0
+											items-center
+											justify-center
+											rounded-xl
+											text-gray-500
+											transition
+											hover:bg-gray-200
+											hover:text-gray-900
+										">
+										<ImLinkedin className="h-5 w-5" />
+									</Link>
+								</TooltipTrigger>
 
-							<TooltipContent side="top">
-								<p>LinkedIn</p>
-							</TooltipContent>
-						</Tooltip>
+								<TooltipContent side="top">
+									<p>LinkedIn</p>
+								</TooltipContent>
+							</Tooltip>
+						</div>
+					</nav>
 
-						{/* Get In Touch */}
-						<Tooltip>
-							<TooltipTrigger>
-								<Link
-									href="/#hero"
-									aria-label="Get In Touch"
-									className="
-										flex h-10 w-10 shrink-0
-										items-center justify-center
-										rounded-xl
-										text-gray-500
-										transition
-										hover:bg-gray-200
-										hover:text-gray-900
-									">
-									<Zap className="h-5 w-5" />
-								</Link>
-							</TooltipTrigger>
+					{/* ========================================
+					    Mobile Get In Touch
+					    Separate from the tab bar
+					======================================== */}
+					<Tooltip>
+						<TooltipTrigger>
+							<Link
+								href="/#hero"
+								aria-label="Get In Touch"
+								className="
+									fixed
+									right-4
+									bottom-24
+									z-50
+									flex
+									h-12
+									w-12
+									items-center
+									justify-center
+									rounded-full
+									border
+									bg-gray-100/95
+									text-gray-700
+									shadow-[0_0_15px_rgba(0,0,0,0.15)]
+									backdrop-blur-md
+									transition-all
+									duration-200
+									hover:bg-white
+									hover:text-gray-950
+									md:hidden
+								">
+								<Zap className="h-5 w-5" />
+							</Link>
+						</TooltipTrigger>
 
-							<TooltipContent side="top">
-								<p>Get In Touch</p>
-							</TooltipContent>
-						</Tooltip>
-					</div>
-				</nav>
+						<TooltipContent side="left">
+							<p>Get In Touch</p>
+						</TooltipContent>
+					</Tooltip>
+				</>
 			</TooltipProvider>
 		</>
 	);

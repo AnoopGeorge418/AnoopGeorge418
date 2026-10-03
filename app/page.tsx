@@ -8,7 +8,6 @@ import { MyServices } from '@/components/Sections/Services';
 import { MyBlogs } from '@/components/Sections/Blogs';
 import { Footer } from '../components/layouts/Footer';
 import { ConversationSection } from '@/components/Sections/Conversation';
-import { Card } from '@/components/ui/card';
 
 const Home = () => {
 	return (
@@ -69,7 +68,7 @@ const Home = () => {
 							</span>
 							<MoveUpRight className="w-2 h-2" />
 						</Button>
-						<Link href="#works" className="cursor-pointer">
+						<Link href="/works" className="cursor-pointer">
 							<Button className="flex justify-center items-center w-80 md:w-56 h-15 md:h-12 gap-2 border border-gray-300 bg-white/80 hover:bg-neutral-100 text-neutral-600 rounded-full md:rounded-md">
 								<span className="font-mono tracking-widest uppercase text-[8px] md:text-sm">
 									Explore My Works
@@ -97,58 +96,6 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-			</section>
-
-			{/*Works*/}
-			<div
-				id="works"
-				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 pt-4 pb-4">
-				{/*header*/}
-				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-					<div className="flex flex-col space-y-4">
-						<h1 className="font-lora text-3xl md:text-5xl tracking-widest">
-							Works
-						</h1>
-						<p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
-							A collection of projects I've built and shipped —
-							from full-stack apps to experiments. Each one
-							reflects what I was learning at the time.
-						</p>
-					</div>
-					<Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
-						<Link href="/works">View All Works</Link>
-						<ArrowRight />
-					</Button>
-				</div>
-
-				{/*bento cards*/}
-				<div></div>
-			</div>
-
-			{/*Stacks*/}
-			<section
-				id="stacks"
-				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 pt-4 pb-4">
-				{/*header*/}
-				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-					<div className="flex flex-col space-y-4">
-						<h1 className="font-lora text-3xl md:text-5xl tracking-widest">
-							Stack & Tooling
-						</h1>
-						<p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
-							The languages, frameworks, and engineering tools I
-							rely on to architect, build, and ship full-stack
-							applications with high reliability.
-						</p>
-					</div>
-					<Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
-						<Link href="/about">Learn More About Me</Link>
-						<ArrowRight />
-					</Button>
-				</div>
-
-				{/*content*/}
-				<MyStacks />
 			</section>
 
 			{/*Service*/}
@@ -180,7 +127,7 @@ const Home = () => {
 				</div>
 
 				{/*CTA*/}
-				<div className="flex flex-col md:flex-row justify-between bg-accent-foreground w-full rounded-md mt-5 p-6 min-h-40 md:h-40 items-center">
+				<div className="flex flex-col md:flex-row justify-between bg-accent-foreground w-full rounded-md mt-10 p-6 min-h-40 md:h-40 items-center">
 					<div className="flex flex-col gap-2 justify-start items-start">
 						<h1 className="font-lora text-md md:text-3xl text-primary-foreground tracking-wider">
 							Have a project in mind? Let's build it together.
@@ -199,30 +146,33 @@ const Home = () => {
 				</div>
 			</section>
 
-			{/* Blogs */}
-			<div className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 pt-4 pb-4">
+			{/*Stacks*/}
+			<section
+				id="stacks"
+				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 pt-4 pb-4">
 				{/*header*/}
 				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
 					<div className="flex flex-col space-y-4">
 						<h1 className="font-lora text-3xl md:text-5xl tracking-widest">
-							Blogs & Writing
+							Stack & Tooling
 						</h1>
 						<p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
-							Thoughts, breakdowns, and engineering lessons from
-							what I'm building and learning — written as I go,
-							not after the fact.
+							The languages, frameworks, and engineering tools I
+							rely on to architect, build, and ship full-stack
+							applications with high reliability.
 						</p>
 					</div>
 					<Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
-						<Link href="/blogs">View All Blogs</Link>
+						<Link href="/about">Learn More About Me</Link>
 						<ArrowRight />
 					</Button>
 				</div>
-				{/* content */}
+
+				{/*content*/}
 				<div className="mt-5">
-					<MyBlogs />
+					<MyStacks />
 				</div>
-			</div>
+			</section>
 
 			{/*Initiate conversation */}
 			<div className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 pt-4 pb-4">

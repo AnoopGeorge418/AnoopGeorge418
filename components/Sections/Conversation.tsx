@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { ReactNode, useState } from 'react';
 import Link from 'next/link';
@@ -67,14 +67,13 @@ const SocialCardData = [
 ];
 
 export const ConversationSection = () => {
+	const [copied, setCopied] = useState(false);
 
-    const [copied, setCopied] = useState(false);
-   
 	const copyEmail = async () => {
 		try {
 			await navigator.clipboard.writeText(ContactInfo.email);
 			setCopied(true);
-   
+
 			setTimeout(() => {
 				setCopied(false);
 			}, 2000);
@@ -82,7 +81,7 @@ export const ConversationSection = () => {
 			setCopied(false);
 		}
 	};
-    
+
 	return (
 		<div className="flex flex-col bg-accent w-full pt-5 p-4 rounded-md pl-6 pr-6">
 			{/*header*/}
@@ -111,22 +110,21 @@ export const ConversationSection = () => {
 					{/*buttons*/}
 					<div className="flex flex-col gap-4 md:w-150">
 						<a
-                            href={`mailto:${ContactInfo.email}`}
+							href={`mailto:${ContactInfo.email}`}
 							className="flex flex-row gap-2">
 							<Button className="flex w-full h-12 font-mono tracking-widest uppercase text-[8px] items-center justify-center cursor-pointer">
 								Send an Email
 								<Mail />
 							</Button>
 						</a>
-						<button
+						<Button
 							onClick={copyEmail}
-							className="flex flex-row gap-2 w-full">
-							<Button 
-								className="flex w-full h-12 font-mono tracking-widest uppercase text-[8px] items-center justify-center cursor-pointer bg-white text-black hover:bg-amber-50 pointer-events-none">
-								<CopyIcon />
-								{copied ? 'Email copied to clipboard' : 'Copy Email Address'}
-							</Button>
-						</button>
+							className="flex w-full h-12 font-mono tracking-widest uppercase text-[8px] items-center justify-center cursor-pointer bg-white text-black hover:bg-amber-50">
+							<CopyIcon />
+							{copied
+								? 'Email copied to clipboard'
+								: 'Copy Email Address'}
+						</Button>
 					</div>
 				</div>
 
