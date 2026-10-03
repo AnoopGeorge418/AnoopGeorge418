@@ -5,7 +5,6 @@ import Link from 'next/link';
 
 import { MyStacks } from '@/components/Sections/Stacks';
 import { MyServices } from '@/components/Sections/Services';
-import { MyBlogs } from '@/components/Sections/Blogs';
 import { Footer } from '../components/layouts/Footer';
 import { ConversationSection } from '@/components/Sections/Conversation';
 
