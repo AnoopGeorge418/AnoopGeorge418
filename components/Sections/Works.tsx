@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import {
 	ArrowUpRight,
 	CircleDot,
@@ -11,11 +11,13 @@ import {
 
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { RepoStatus, WorkProject, WorksStats } from '@/types/worksTypes';
+import type { RepoStatus, WorkProject, WorksStats } from '@/types/worksTypes';
 
 const labelClass = 'font-mono text-[10px] tracking-widest uppercase';
+
 const bodyClass =
 	'font-mono text-[11px] leading-relaxed tracking-wide text-neutral-600 sm:text-xs dark:text-neutral-400';
+
 const MAX_TOPICS = 8;
 
 const statusStyles: Record<RepoStatus, { pill: string; dot: string }> = {
@@ -23,10 +25,12 @@ const statusStyles: Record<RepoStatus, { pill: string; dot: string }> = {
 		pill: 'border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-900 dark:bg-emerald-950/40 dark:text-emerald-400',
 		dot: 'bg-emerald-500',
 	},
+
 	PAUSED: {
 		pill: 'border-sky-200 bg-sky-50 text-sky-700 dark:border-sky-900 dark:bg-sky-950/40 dark:text-sky-400',
 		dot: 'bg-sky-500',
 	},
+
 	ARCHIVED: {
 		pill: 'border-neutral-200 bg-neutral-50 text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400',
 		dot: 'bg-neutral-400',
@@ -36,7 +40,9 @@ const statusStyles: Record<RepoStatus, { pill: string; dot: string }> = {
 const restrictedCard =
 	'border-dashed border-amber-300 bg-amber-50/40 dark:border-amber-900/70 dark:bg-amber-950/10';
 
-/* ---------- small building blocks ---------- */
+/* -------------------------------------------------------------------------- */
+/* Pill                                                                       */
+/* -------------------------------------------------------------------------- */
 
 const Pill = ({
 	children,
@@ -44,16 +50,22 @@ const Pill = ({
 }: {
 	children: ReactNode;
 	className?: string;
-}) => (
-	<span
-		className={cn(
-			labelClass,
-			'inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1',
-			className,
-		)}>
-		{children}
-	</span>
-);
+}) => {
+	return (
+		<span
+			className={cn(
+				labelClass,
+				'inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1',
+				className,
+			)}>
+			{children}
+		</span>
+	);
+};
+
+/* -------------------------------------------------------------------------- */
+/* Chip                                                                       */
+/* -------------------------------------------------------------------------- */
 
 const Chip = ({
 	children,
@@ -61,15 +73,21 @@ const Chip = ({
 }: {
 	children: ReactNode;
 	className?: string;
-}) => (
-	<span
-		className={cn(
-			'rounded-sm border px-1.5 py-0.5 font-mono text-[10px] tracking-wider uppercase',
-			className,
-		)}>
-		{children}
-	</span>
-);
+}) => {
+	return (
+		<span
+			className={cn(
+				'rounded-sm border px-1.5 py-0.5 font-mono text-[10px] tracking-wider uppercase',
+				className,
+			)}>
+			{children}
+		</span>
+	);
+};
+
+/* -------------------------------------------------------------------------- */
+/* Action Link                                                                */
+/* -------------------------------------------------------------------------- */
 
 const ActionLink = ({
 	href,
@@ -114,6 +132,10 @@ const ActionLink = ({
 	);
 };
 
+/* -------------------------------------------------------------------------- */
+/* Tile                                                                       */
+/* -------------------------------------------------------------------------- */
+
 const Tile = ({
 	label,
 	aside,
@@ -126,36 +148,51 @@ const Tile = ({
 	children: ReactNode;
 	action?: ReactNode;
 	className?: string;
-}) => (
-	<div
-		className={cn(
-			'flex min-w-0 flex-col justify-between gap-4 rounded-xl border bg-card p-4 shadow-xs',
-			className,
-		)}>
-		<div className="flex flex-col gap-3">
-			<div className="flex items-center justify-between gap-2">
-				<span className={cn(labelClass, 'text-neutral-500')}>
-					{label}
-				</span>
-				{aside}
+}) => {
+	return (
+		<div
+			className={cn(
+				'flex min-w-0 flex-col justify-between gap-4 rounded-xl border bg-card p-4 shadow-xs',
+				className,
+			)}>
+			<div className="flex flex-col gap-3">
+				<div className="flex items-center justify-between gap-2">
+					<span className={cn(labelClass, 'text-neutral-500')}>
+						{label}
+					</span>
+
+					{aside}
+				</div>
+
+				{children}
 			</div>
-			{children}
+
+			{action}
 		</div>
-		{action}
-	</div>
-);
+	);
+};
 
-const Stat = ({ value, label }: { value: number; label: string }) => (
-	<div className="flex flex-col gap-1 rounded-xl border bg-card px-4 py-3 sm:py-4">
-		<span className="font-lora text-2xl sm:text-3xl">{value}</span>
-		<span className={cn(labelClass, 'text-neutral-500')}>{label}</span>
-	</div>
-);
+/* -------------------------------------------------------------------------- */
+/* Stat                                                                       */
+/* -------------------------------------------------------------------------- */
 
-/* ---------- featured preview (top / left card) ---------- */
+const Stat = ({ value, label }: { value: number; label: string }) => {
+	return (
+		<div className="flex flex-col gap-1 rounded-xl border bg-card px-4 py-3 sm:py-4">
+			<span className="font-lora text-2xl sm:text-3xl">{value}</span>
+
+			<span className={cn(labelClass, 'text-neutral-500')}>{label}</span>
+		</div>
+	);
+};
+
+/* -------------------------------------------------------------------------- */
+/* Browser Preview                                                            */
+/* -------------------------------------------------------------------------- */
 
 const BrowserPreview = ({ project }: { project: WorkProject }) => {
 	const restricted = project.isPrivate;
+
 	const address = restricted
 		? 'restricted'
 		: (project.homepageHost ?? `github.com/${project.fullName}`);
@@ -166,8 +203,10 @@ const BrowserPreview = ({ project }: { project: WorkProject }) => {
 				<span className="size-2 shrink-0 rounded-full bg-red-400" />
 				<span className="size-2 shrink-0 rounded-full bg-amber-400" />
 				<span className="size-2 shrink-0 rounded-full bg-emerald-500" />
+
 				<span className="mx-auto flex min-w-0 max-w-[70%] items-center gap-1 rounded border bg-background px-3 py-0.5 font-mono text-[9px] text-neutral-500">
 					{restricted && <Lock className="size-2.5 shrink-0" />}
+
 					<span className="truncate">{address}</span>
 				</span>
 			</div>
@@ -179,11 +218,13 @@ const BrowserPreview = ({ project }: { project: WorkProject }) => {
 				)}>
 				<div className="flex items-center gap-2">
 					<span className="size-6 rounded-md bg-emerald-100 dark:bg-emerald-900/50" />
+
 					<div className="flex flex-col gap-1">
 						<span className="h-1.5 w-24 rounded bg-neutral-200 dark:bg-neutral-700" />
 						<span className="h-1 w-14 rounded bg-neutral-100 dark:bg-neutral-800" />
 					</div>
 				</div>
+
 				<div className="grid grid-cols-3 gap-2">
 					{['bg-emerald-200', 'bg-amber-200', 'bg-sky-200'].map(
 						(color) => (
@@ -193,6 +234,7 @@ const BrowserPreview = ({ project }: { project: WorkProject }) => {
 								<span
 									className={cn('h-1.5 w-8 rounded', color)}
 								/>
+
 								<span className="h-3 w-full rounded bg-neutral-100 dark:bg-neutral-800" />
 							</div>
 						),
@@ -216,23 +258,30 @@ const BrowserPreview = ({ project }: { project: WorkProject }) => {
 	);
 };
 
-/* ---------- one repository ---------- */
+/* -------------------------------------------------------------------------- */
+/* Project Row                                                                */
+/* -------------------------------------------------------------------------- */
 
 const ProjectRow = ({ project }: { project: WorkProject }) => {
 	const status = statusStyles[project.status];
+
 	const restricted = project.isPrivate;
+
 	const shownTopics = project.topics.slice(0, MAX_TOPICS);
+
 	const hiddenTopics = project.topics.length - shownTopics.length;
 
 	return (
 		<article className="flex flex-col gap-4 md:gap-6">
-			{/* heading row */}
+			{/* Header */}
 			<div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
 				<div className="flex min-w-0 items-center gap-3">
 					<span className="font-mono text-[10px] text-neutral-400">
 						{project.index}
 					</span>
+
 					<span className="h-4 w-px shrink-0 bg-border" />
+
 					<h2 className="min-w-0 wrap-break-word font-lora text-xl tracking-wide sm:text-2xl md:text-3xl">
 						{project.title}
 					</h2>
@@ -245,6 +294,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 							Fork
 						</Pill>
 					)}
+
 					{restricted ? (
 						<Pill className="border-amber-200 bg-amber-50 text-amber-700 dark:border-amber-900 dark:bg-amber-950/40 dark:text-amber-400">
 							<Lock className="size-3" />
@@ -256,18 +306,20 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 							Public
 						</Pill>
 					)}
+
 					<Pill className={status.pill}>
 						<span
 							className={cn('size-1.5 rounded-full', status.dot)}
 						/>
+
 						{project.status}
 					</Pill>
 				</div>
 			</div>
 
-			{/* bento grid */}
+			{/* Bento Grid */}
 			<div className="grid grid-cols-1 gap-3 sm:gap-4 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
-				{/* featured card */}
+				{/* Featured Card */}
 				<div
 					className={cn(
 						'flex min-w-0 flex-col gap-4 rounded-2xl border bg-card p-4 shadow-xs sm:p-5 md:gap-5',
@@ -279,6 +331,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 						<h3 className="break-all font-mono text-sm font-semibold tracking-wide sm:text-base">
 							{project.fullName}
 						</h3>
+
 						<p className={bodyClass}>
 							{project.description ??
 								'No description has been added to this repository on GitHub yet.'}
@@ -291,6 +344,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 										{project.language}
 									</Chip>
 								)}
+
 								{shownTopics.map((topic) => (
 									<Chip
 										key={topic}
@@ -298,6 +352,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 										{topic}
 									</Chip>
 								))}
+
 								{hiddenTopics > 0 && (
 									<Chip className="bg-muted text-neutral-500">
 										+{hiddenTopics}
@@ -308,9 +363,9 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 					</div>
 				</div>
 
-				{/* tiles */}
+				{/* Right-side Tiles */}
 				<div className="grid grid-cols-2 gap-3 sm:gap-4">
-					{/* repository: public link or restricted */}
+					{/* Repository */}
 					<Tile
 						label="Repository"
 						className={cn(
@@ -326,6 +381,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 										: 'text-neutral-500',
 								)}>
 								{restricted && <Lock className="size-2.5" />}
+
 								{restricted ? 'Private' : 'Public'}
 							</span>
 						}
@@ -349,10 +405,12 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 								<span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-400">
 									<Lock className="size-4" />
 								</span>
+
 								<div className="flex flex-col gap-1">
 									<h4 className="text-sm font-semibold">
 										Restricted
 									</h4>
+
 									<p className={bodyClass}>
 										No GitHub access. This repository is
 										private, so its source code is not
@@ -365,6 +423,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 								<h4 className="text-sm font-semibold">
 									Open source
 								</h4>
+
 								<p className={bodyClass}>
 									Read the code, commit history and issues
 									directly on GitHub.
@@ -373,7 +432,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 						)}
 					</Tile>
 
-					{/* deployment: GitHub "Website" field */}
+					{/* Deployment */}
 					<Tile
 						label="Deployment"
 						className="col-span-2 sm:col-span-1 sm:min-h-48"
@@ -395,6 +454,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 							<h4 className="break-all text-sm font-semibold">
 								{project.homepageHost ?? 'Not deployed'}
 							</h4>
+
 							<p className={bodyClass}>
 								{project.homepage
 									? 'Live site linked from this repository.'
@@ -403,7 +463,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 						</div>
 					</Tile>
 
-					{/* activity */}
+					{/* Activity */}
 					<Tile label="Activity" className="col-span-1">
 						<dl className="flex flex-col gap-3">
 							<div className="flex flex-col gap-0.5">
@@ -414,10 +474,12 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 									)}>
 									Last push
 								</dt>
+
 								<dd className="text-sm font-semibold">
 									{project.pushedLabel}
 								</dd>
 							</div>
+
 							<div className="flex flex-col gap-0.5">
 								<dt
 									className={cn(
@@ -426,6 +488,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 									)}>
 									Created
 								</dt>
+
 								<dd className="text-sm font-semibold">
 									{project.createdLabel}
 								</dd>
@@ -433,7 +496,7 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 						</dl>
 					</Tile>
 
-					{/* popularity */}
+					{/* Community */}
 					<Tile label="Community" className="col-span-1">
 						<div className="grid grid-cols-3 gap-1 text-center">
 							{[
@@ -457,9 +520,11 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 									key={label}
 									className="flex flex-col items-center gap-1">
 									<Icon className="size-3.5 text-neutral-400" />
+
 									<span className="text-base font-semibold leading-none">
 										{value}
 									</span>
+
 									<span
 										className={cn(
 											labelClass,
@@ -477,7 +542,9 @@ const ProjectRow = ({ project }: { project: WorkProject }) => {
 	);
 };
 
-/* ---------- section ---------- */
+/* -------------------------------------------------------------------------- */
+/* Works Component                                                            */
+/* -------------------------------------------------------------------------- */
 
 export const WorksComponent = ({
 	projects,
@@ -490,7 +557,7 @@ export const WorksComponent = ({
 }) => {
 	return (
 		<section className="flex w-full flex-col gap-10 px-4 pt-10 pb-28 sm:px-6 md:gap-14 md:px-10 md:pt-36 md:pb-20 xl:px-16">
-			{/* header */}
+			{/* Header */}
 			<header className="flex flex-col gap-6 border-b pb-10 md:gap-8 md:pb-14">
 				<Pill className="w-fit bg-background text-neutral-600 dark:text-neutral-400">
 					<span className="size-1.5 animate-pulse rounded-full bg-emerald-500" />
@@ -515,28 +582,33 @@ export const WorksComponent = ({
 
 				<div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:max-w-3xl">
 					<Stat value={stats.total} label="Repositories" />
+
 					<Stat value={stats.public} label="Public" />
+
 					<Stat value={stats.private} label="Private" />
+
 					<Stat value={stats.stars} label="Stars" />
 				</div>
 			</header>
 
-			{/* notices */}
+			{/* Error Notice */}
 			{error && (
 				<div className="flex items-start gap-3 rounded-2xl border border-dashed border-amber-300 bg-amber-50/40 p-4 sm:p-6 dark:border-amber-900/70 dark:bg-amber-950/10">
 					<TriangleAlert className="mt-0.5 size-4 shrink-0 text-amber-600" />
+
 					<div className="flex flex-col gap-1">
 						<h2 className="text-sm font-semibold">
 							{projects.length === 0
 								? 'Could not load repositories from GitHub'
 								: 'Showing partial results from GitHub'}
 						</h2>
+
 						<p className={bodyClass}>{error}</p>
 					</div>
 				</div>
 			)}
 
-			{/* repositories */}
+			{/* Repositories */}
 			{projects.length === 0 && !error ? (
 				<p className={bodyClass}>
 					No repositories found on GitHub yet.

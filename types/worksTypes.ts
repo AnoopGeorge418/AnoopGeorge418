@@ -1,6 +1,5 @@
 export type RepoStatus = 'ACTIVE' | 'PAUSED' | 'ARCHIVED';
 
-/** One repository, exactly the fields we keep from the GitHub API. */
 export type GithubRepo = {
 	id: number;
 	name: string;
@@ -14,17 +13,14 @@ export type GithubRepo = {
 	openIssues: number;
 	language: string | null;
 	topics: string[];
-	/** Sanitised (http/https only) "Website" field from the repo settings. */
 	homepage: string | null;
 	createdAt: string;
 	pushedAt: string;
-	/** `null` for private repos on purpose - the codebase link is never exposed. */
 	url: string | null;
 };
 
 export type GithubReposResult = { repos: GithubRepo[]; error: string | null };
 
-/** What the UI renders: a repo plus a few derived display fields. */
 export type WorkProject = GithubRepo & {
 	index: string;
 	title: string;
@@ -45,4 +41,31 @@ export type WorksResult = {
 	projects: WorkProject[];
 	stats: WorksStats;
 	error: string | null;
+};
+
+/**
+ * Static metadata for manually configured work/project entries.
+ */
+export type WorkMeta = {
+	repo: string;
+	title: string;
+	badge?: string;
+	status?: string;
+	summary: string;
+	stack: string[];
+	previewUrl?: string;
+	detailUrl?: string;
+	deployment?: { stage: string; label: string; desc: string; url?: string };
+	walkthrough?: {
+		title: string;
+		desc: string;
+		duration: string;
+		url?: string;
+	};
+	writeup?: { title: string; quote: string; readTime: string; url?: string };
+	fallbackRepo?: {
+		isPrivate: boolean;
+		description: string;
+		language: string;
+	};
 };
