@@ -376,7 +376,7 @@ export const NavBar = () => {
 					======================================== */}
 					<Tooltip>
 						<TooltipTrigger>
-							<button
+							<Button
 								onClick={() => setIsModalOpen(true)}
 								aria-label="Get In Touch"
 								className="
@@ -403,7 +403,7 @@ export const NavBar = () => {
 									cursor-pointer
 								">
 								<Zap className="h-5 w-5" />
-							</button>
+							</Button>
 						</TooltipTrigger>
 
 						<TooltipContent side="left">
