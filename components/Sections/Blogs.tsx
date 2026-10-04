@@ -1,58 +1,11 @@
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import { Card } from '../ui/card';
-
-export type Blogstype = {
-	tag: OfficialTags;
-	infoTag?: string;
-	title: string;
-	desc: string;
-	dateOfPublish: string;
-	blogLength?: string;
-	blogPageUrl: string;
-};
-
-export type OfficialTags = 'DEV LOG' | 'CASE STUDY' | 'REFLECTION';
-
-export const BlogsData: Blogstype[] = [
-	{
-		tag: 'DEV LOG',
-		infoTag: 'Featured Essay',
-		title: "Why I'm Building Greenhoodspace While Learning to Code",
-		desc: 'A reflection on building an ambitious offline-first knowledge ecosystem day-by-day while mastering fundamental software engineering concepts from pure scratch.',
-		dateOfPublish: 'Sept 20, 2026',
-		blogLength: '5 min read',
-		blogPageUrl: '/blog',
-	},
-	{
-		tag: 'CASE STUDY',
-		title: 'Building an Internal Dashboard for a School — CSV Import Done Right',
-		desc: 'Handling dirty spreadsheets, edge transaction rollbacks, and PostgreSQL NUMERIC precision when financial accuracy is paramount.',
-		dateOfPublish: 'Aug 28, 2026',
-		blogLength: '5 min read',
-		blogPageUrl: '/blog',
-	},
-	{
-		tag: 'REFLECTION',
-		title: '100 Days of Learning: Engineering Principles & Week 1 Notes',
-		desc: 'Early takeaways from an intensive self-directed curriculum covering low-level concurrency, WebGPU pipelines, and systems design.',
-		dateOfPublish: 'July 12, 2026',
-		blogLength: '5 min read',
-		blogPageUrl: '/blog',
-	},
-	{
-		tag: 'DEV LOG',
-		infoTag: 'Featured Essay',
-		title: "Why I'm Building Greenhoodspace While Learning to Code",
-		desc: 'A reflection on building an ambitious offline-first knowledge ecosystem day-by-day while mastering fundamental software engineering concepts from pure scratch.',
-		dateOfPublish: 'Sept 20, 2026',
-		blogPageUrl: '/blog',
-	},
-];
+import { BlogsData } from '@/data/blogsData';
 
 export const MyBlogs = () => {
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-accent w-full pt-5 p-4 rounded-md">
+		<div className="grid grid-cols-1 md:grid-cols-1 gap-6 bg-accent w-full pt-5 p-4 rounded-md">
 			{BlogsData.map((item) => {
 				// Setting up color rules for info tag
 				let tagColorClass = 'bg-blue-200';

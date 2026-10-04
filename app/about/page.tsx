@@ -2,7 +2,11 @@ import { ConversationSection } from '@/components/Sections/Conversation';
 import { MyStacks } from '@/components/Sections/Stacks';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { AboutApproachData, AboutHeroCardData } from '@/data/aboutData';
+import {
+	AboutApproachData,
+	AboutHeroCardData,
+	AboutWorkExperienceData,
+} from '@/data/aboutData';
 import { AboutHeroCardType } from '@/types/aboutTypes';
 import { ArrowDown, Download, Zap } from 'lucide-react';
 import Link from 'next/link';
@@ -114,7 +118,7 @@ const AboutPage = ({}: AboutHeroCardType) => {
 						<span className="text-neutral-400 uppercase font-mono tracking-widest text-[8px]">
 							Philosophy & Method
 						</span>
-						<h2 className="font-lora text-xl md:text-2xl tracking-widest">
+						<h2 className="font-lora text-xl md:text-3xl tracking-widest">
 							How I Approach Software
 						</h2>
 					</div>
@@ -168,7 +172,7 @@ const AboutPage = ({}: AboutHeroCardType) => {
 							Track Record
 						</span>
 						<h1 className="font-lora tracking-widest text-xl md:text-3xl">
-							Work Experience
+							Education & Work Experience
 						</h1>
 					</div>
 					<Button className="flex flex-row gap-2 font-mono text-[8px] cursor-pointer h-12 pl-4 pr-4 uppercase tracking-widest">
@@ -177,12 +181,81 @@ const AboutPage = ({}: AboutHeroCardType) => {
 					</Button>
 				</div>
 				{/*Content*/}
-				<div className="flex flex-col gap-6"></div>
+				<div className="relative flex flex-col gap-6 w-full rounded-lg mt-4">
+					{/* Vertical line placed inside the padding/flow */}
+					<div className="absolute left-6 top-6 bottom-6 w-1 bg-gradient-to-b from-neutral-300 via-neutral-400 to-neutral-300 dark:from-neutral-700 dark:via-neutral-600 dark:to-neutral-700 rounded-full" />
+
+					{AboutWorkExperienceData.map((data) => (
+						<div
+							key={data.title}
+							className="relative flex items-center pl-14">
+							{/* Big timeline dot placed directly on the vertical line */}
+							<div className="absolute left-6 w-5 h-5 rounded-full bg-primary border-4 border-background -translate-x-1/2 z-10 shadow-md flex items-center justify-center">
+								<div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+							</div>
+
+							<Card className="border shadow bg-accent-foreground md:bg-transparent p-6 w-full">
+								{/*title, role and duration*/}
+								<div className="flex flex-row justify-between items-start">
+									<div className="flex flex-col gap-2">
+										<h1 className="font-lora tracking-widest text-2xl">
+											{data.title}
+										</h1>
+										<span className="font-mono tracking-widest text-[10px] text-neutral-500 uppercase">
+											{data.company}
+										</span>
+									</div>
+									<span className="font-mono tracking-widest text-[8px] bg-accent rounded-full text-black p-1 pl-4 pr-4 font-bold uppercase">
+										{data.duration}
+									</span>
+								</div>
+								{/*description & tag*/}
+								<div className="flex flex-col gap-8 mt-4">
+									<p className="font-mono tracking-widest text-[10px] text-neutral-600">
+										{data.desc}
+									</p>
+									<div className="flex flex-col md:flex-row md:items-center gap-2">
+										<p className="font-mono tracking-widest text-[8px] text-neutral-400 uppercase">
+											Highlights:
+										</p>
+										<div className="flex flex-row flex-wrap gap-2">
+											{data.tags.map((tag) => (
+												<span
+													key={tag}
+													className="font-mono tracking-widest text-[8px] bg-accent text-black rounded-md p-1 pl-3 pr-3">
+													{tag}
+												</span>
+											))}
+										</div>
+									</div>
+								</div>
+							</Card>
+						</div>
+					))}
+				</div>
 			</div>
 
 			{/*Stack*/}
 			<div className="mt-5">
-				<MyStacks />
+				{/*header*/}
+				<div className="flex flex-row justify-between items-center">
+					<div className="flex flex-col gap-2">
+						<span className="font-mono text-[8px] tracking-widest text-neutral-500">
+							Toolbox
+						</span>
+						<h1 className="font-lora tracking-widest text-xl md:text-3xl">
+							Technologies & Craft
+						</h1>
+						<p className="font-mono text-[10px] tracking-widest">
+							Curated languages, frameworks, and infrastructure I
+							reach for daily to build reliable, high-speed
+							products.
+						</p>
+					</div>
+				</div>
+				<div className="mt-5">
+					<MyStacks />
+				</div>
 			</div>
 
 			{/*Connect*/}

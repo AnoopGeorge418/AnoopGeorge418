@@ -14,12 +14,14 @@ import {
 	Layers3,
 	Code2,
 	NotebookText,
+	X,
 } from 'lucide-react';
 
 import { FaGithub } from 'react-icons/fa';
 import { ImLinkedin } from 'react-icons/im';
 
 import { Button } from '../ui/button';
+import { GetInTouch } from '@/components/modals/getInTouchModal';
 
 import {
 	Tooltip,
@@ -33,7 +35,6 @@ const navItems = [
 	{ name: 'Works', href: '/works', icon: BriefcaseBusiness },
 	{ name: 'About', href: '/about', icon: UserRound },
 	{ name: 'Services', href: '/#services', icon: Layers3 },
-	{ name: 'Stacks', href: '/#stacks', icon: Code2 },
 	{ name: 'Blogs', href: '/blogs', icon: NotebookText },
 ];
 
@@ -47,6 +48,7 @@ export const NavBar = () => {
 
 	const [hideNavbar, setHideNavbar] = useState(false);
 	const [activeSection, setActiveSection] = useState('hero');
+	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	// ==========================================
 	// Desktop navbar scroll behavior
@@ -237,7 +239,9 @@ export const NavBar = () => {
 					</Link>
 
 					{/* Get In Touch */}
-					<Button className="h-10 w-45 cursor-pointer gap-2 uppercase tracking-widest">
+					<Button
+						onClick={() => setIsModalOpen(true)}
+						className="h-10 w-45 cursor-pointer gap-2 uppercase tracking-widest">
 						<Zap className="h-5 w-5" />
 						Get In Touch
 					</Button>
@@ -372,8 +376,8 @@ export const NavBar = () => {
 					======================================== */}
 					<Tooltip>
 						<TooltipTrigger>
-							<Link
-								href="/#hero"
+							<button
+								onClick={() => setIsModalOpen(true)}
 								aria-label="Get In Touch"
 								className="
 									fixed
@@ -396,9 +400,10 @@ export const NavBar = () => {
 									hover:bg-white
 									hover:text-gray-950
 									md:hidden
+									cursor-pointer
 								">
 								<Zap className="h-5 w-5" />
-							</Link>
+							</button>
 						</TooltipTrigger>
 
 						<TooltipContent side="left">
@@ -407,6 +412,20 @@ export const NavBar = () => {
 					</Tooltip>
 				</>
 			</TooltipProvider>
+
+			{/* Modal Renderer */}
+			{isModalOpen && (
+				<div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+					<div className="relative w-auto max-w-xl bg-accent-foreground rounded-lg shadow-lg overflow-hidden border">
+						<Button
+							onClick={() => setIsModalOpen(false)}
+							className="absolute top-4 right-4 p-2 rounded-md transition cursor-pointer z-10 flex items-center justify-center">
+							<X size={14} className="text-white" />
+						</Button>
+						<GetInTouch />
+					</div>
+				</div>
+			)}
 		</>
 	);
 };
