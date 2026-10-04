@@ -8,3 +8,11 @@ export type AboutApproachType = {
 	desc: string;
 	tags: string[];
 }[];
+
+export type AboutWorkExperienceType = {
+	title: string;
+	company: string;
+	desc: string;
+	duration: string;
+	tags: string[];
+}[];

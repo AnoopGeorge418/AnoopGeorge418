@@ -3,9 +3,7 @@ import { Button } from '@/components/ui/button';
 import { MoveUpRight, MoveDown, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
-import { MyStacks } from '@/components/Sections/Stacks';
 import { MyServices } from '@/components/Sections/Services';
-import { Footer } from '../components/layouts/Footer';
 import { ConversationSection } from '@/components/Sections/Conversation';
 
 const Home = () => {
@@ -142,34 +140,6 @@ const Home = () => {
 						Initiate Discussion
 						<MoveUpRight />
 					</Button>
-				</div>
-			</section>
-
-			{/*Stacks*/}
-			<section
-				id="stacks"
-				className="flex flex-col w-full pl-6 pr-6 md:pl-10 md:pr-10 my-20 pt-4 pb-4">
-				{/*header*/}
-				<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-					<div className="flex flex-col space-y-4">
-						<h1 className="font-lora text-3xl md:text-5xl tracking-widest">
-							Stack & Tooling
-						</h1>
-						<p className="font-mono tracking-wider max-w-md md:max-w-190 text-[10px] md:text-md  text-neutral-600 leading-relaxed">
-							The languages, frameworks, and engineering tools I
-							rely on to architect, build, and ship full-stack
-							applications with high reliability.
-						</p>
-					</div>
-					<Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
-						<Link href="/about">Learn More About Me</Link>
-						<ArrowRight />
-					</Button>
-				</div>
-
-				{/*content*/}
-				<div className="mt-5">
-					<MyStacks />
 				</div>
 			</section>
 

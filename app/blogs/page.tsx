@@ -20,10 +20,6 @@ const BlogsPage = () => {
 							not after the fact.
 						</p>
 					</div>
-					<Button className="w-full md:w-60 h-12 text-[8px] md:text-md font-mono tracking-widest uppercase shrink-0">
-						<Link href="/blogs">View All Blogs</Link>
-						<ArrowRight />
-					</Button>
 				</div>
 				{/* content */}
 				<div className="mt-5">
